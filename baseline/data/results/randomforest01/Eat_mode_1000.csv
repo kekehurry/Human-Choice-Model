@@ -1,0 +1,1001 @@
+person_id,age,age_group,individual_income,income_group,household_size,family_structure,vehicles,target_amenity,target_mode,pred_mode
+46113,29,Young Adult,53672,Moderate,3_person,family_single,1,F&B Eatery/Drinking Places,Walking,Public_transport
+10057,26,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+27746,73,Elderly,20629,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+27315,25,Young Adult,45084,Moderate,3_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+29362,26,Young Adult,59039,Moderate,2_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Walking
+32543,28,Young Adult,61887,High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+52783,73,Elderly,13954,Low,1_person,living_alone,1,F&B Eatery/Drinking Places,Car,Car
+62546,21,Young Adult,7071,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+51331,26,Young Adult,37816,Moderate,3_person,nonfamily_single,3_plus,F&B Eatery/Limited-Service Restaurants,Walking,Car
+66549,55,Senior,91243,Very High,3_person,family_single,3_plus,F&B Eatery/Limited-Service Restaurants,Car,Car
+58432,40,Adult,65659,High,2_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+43826,40,Adult,0,Debt,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+59578,64,Elderly,70974,High,3_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+42072,26,Young Adult,23253,Low,3_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+29882,70,Elderly,63276,High,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+13751,28,Young Adult,0,Debt,6_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+53701,46,Middle Age,66012,High,2_person,married_couple,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+5497,29,Young Adult,77288,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+7044,48,Middle Age,114859,Very High,4_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+39229,65,Elderly,31237,Moderate,3_person,family_single,0,F&B Eatery/Drinking Places,Walking,Public_transport
+29317,59,Senior,54023,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+18738,61,Elderly,12965,Low,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+55323,37,Adult,154717,Ultra High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+28393,35,Adult,98194,Very High,3_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+54010,32,Adult,86437,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+5097,63,Elderly,81035,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+21711,56,Senior,39547,Moderate,2_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+62308,50,Middle Age,0,Debt,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+17818,33,Adult,41864,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+42645,43,Middle Age,206290,Ultra High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+12380,44,Middle Age,40405,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+65530,55,Senior,32324,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+14588,76,Elderly,41464,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+30531,28,Young Adult,20629,Low,2_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+13311,49,Middle Age,41258,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+60423,30,Young Adult,0,Debt,6_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+4541,29,Young Adult,73740,High,6_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+13828,59,Senior,34037,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+39397,29,Young Adult,50507,Moderate,4_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+59179,25,Young Adult,53672,Moderate,4_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+22731,63,Elderly,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+63635,28,Young Adult,42184,Moderate,3_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+46433,32,Adult,21660,Low,2_person,family_single,2,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+52530,33,Adult,35655,Moderate,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+22115,29,Young Adult,5273,Low,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+23416,26,Young Adult,86641,High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+27353,36,Adult,103145,Very High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+27258,30,Young Adult,137379,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+17821,28,Young Adult,89641,High,2_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+22462,34,Adult,60608,High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+7960,25,Young Adult,16855,Low,6_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+53571,37,Adult,162070,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+14440,63,Elderly,657756,Ultra High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+58092,45,Middle Age,18772,Low,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+14986,24,Young Adult,30583,Moderate,2_person,nonfamily_single,1,F&B Eatery/Drinking Places,Car,Car
+21076,58,Senior,10756,Low,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+61821,64,Elderly,29294,Low,4_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+40209,20,Young Adult,0,Debt,5_person,married_couple,1,F&B Eatery/Drinking Places,Public_transport,Car
+39023,61,Elderly,127607,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+12696,49,Middle Age,309435,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+66420,78,Elderly,24783,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+41362,47,Middle Age,121217,Ultra High,7_plus_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+48123,30,Young Adult,118616,Very High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+65839,33,Adult,59824,Moderate,3_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Walking
+54933,35,Adult,52500,Moderate,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+32833,33,Adult,32414,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+58769,19,Young Adult,0,Debt,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+55635,29,Young Adult,48305,Moderate,3_person,nonfamily_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+16661,46,Middle Age,103145,Very High,6_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+62289,70,Elderly,318195,Ultra High,1_person,living_alone,1,F&B Eatery/Drinking Places,Car,Car
+8656,41,Middle Age,112712,Very High,1_person,living_alone,1,F&B Eatery/Drinking Places,Car,Car
+38953,42,Middle Age,236231,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+12714,45,Middle Age,0,Debt,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+35343,27,Young Adult,36100,Moderate,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+19249,31,Adult,26840,Low,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+46324,44,Middle Age,362784,Ultra High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+62476,67,Elderly,22146,Low,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+60271,67,Elderly,67044,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+41187,31,Adult,50507,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+5113,73,Elderly,52191,Moderate,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+53560,32,Adult,221467,Ultra High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+46194,51,Senior,13709,Low,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+22409,40,Adult,51572,Moderate,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+45510,27,Young Adult,0,Debt,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+37699,35,Adult,8045,Low,5_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+23274,81,Elderly,10933,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+28231,76,Elderly,51517,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+7512,83,Elderly,19494,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+50573,25,Young Adult,4125,Low,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+33099,31,Adult,151806,Ultra High,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Car,Walking
+48889,25,Young Adult,43326,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+13273,53,Senior,90913,Very High,4_person,family_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+20202,26,Young Adult,59824,Moderate,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+25395,29,Young Adult,34344,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+40768,73,Elderly,33334,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+20733,26,Young Adult,30021,Moderate,5_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+16059,50,Middle Age,128931,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+50812,55,Senior,0,Debt,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+73,52,Senior,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+1843,44,Middle Age,121012,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+33538,81,Elderly,256269,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+11228,74,Elderly,41165,Moderate,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+47447,26,Young Adult,168126,Ultra High,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+63542,21,Young Adult,2160,Low,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+17669,52,Senior,0,Debt,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+9436,19,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+60620,70,Elderly,330317,Ultra High,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+49011,57,Senior,102423,Very High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+28879,41,Middle Age,84368,High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+54700,65,Elderly,0,Debt,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+18325,21,Young Adult,0,Debt,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+37621,79,Elderly,24689,Low,3_person,family_single,3_plus,F&B Eatery/Limited-Service Restaurants,Car,Car
+50511,23,Young Adult,44715,Moderate,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+19781,26,Young Adult,75141,High,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+13406,77,Elderly,379006,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+12150,27,Young Adult,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+5938,45,Middle Age,361008,Ultra High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+28207,55,Senior,295198,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+28451,60,Senior,122967,Ultra High,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+42447,30,Young Adult,31975,Moderate,3_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+21448,73,Elderly,54853,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+5745,26,Young Adult,38385,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+44296,64,Elderly,9899,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+4027,46,Middle Age,44352,Moderate,4_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+66298,80,Elderly,0,Debt,6_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+48824,42,Middle Age,38858,Moderate,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+17500,27,Young Adult,64406,High,2_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+47145,40,Adult,32414,Moderate,7_plus_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Car
+8974,37,Adult,0,Debt,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+38665,57,Senior,429,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+21326,32,Adult,75152,High,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+36731,64,Elderly,55428,Moderate,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+3937,20,Young Adult,6482,Low,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+20437,34,Adult,58588,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+17494,45,Middle Age,103051,Very High,2_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+4414,46,Middle Age,10314,Low,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+55562,35,Adult,75760,High,7_plus_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+61686,22,Young Adult,25499,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+49945,32,Adult,43320,Moderate,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+26401,46,Middle Age,54023,Moderate,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+3146,61,Elderly,19288,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+50529,55,Senior,32324,Moderate,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+58881,79,Elderly,42184,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+64199,32,Adult,34350,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+7507,26,Young Adult,75632,High,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+49296,43,Middle Age,10101,Low,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+43535,30,Young Adult,0,Debt,3_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+38960,40,Adult,12323,Low,3_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+9990,30,Young Adult,40405,Moderate,3_person,nonfamily_single,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+3514,21,Young Adult,3094,Low,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+61030,40,Adult,240450,Ultra High,2_person,married_couple,0,F&B Eatery/Drinking Places,Walking,Walking
+40040,45,Middle Age,1054,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+59091,67,Elderly,10372,Low,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+19476,24,Young Adult,25253,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+65179,32,Adult,309435,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+31235,55,Senior,85423,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+33971,29,Young Adult,134088,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+36163,65,Elderly,10101,Low,4_person,family_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+50982,25,Young Adult,18367,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+42459,84,Elderly,22223,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+53333,52,Senior,0,Debt,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+56777,54,Senior,0,Debt,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+53380,69,Elderly,8485,Low,5_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+9411,19,Young Adult,6060,Low,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+5255,30,Young Adult,206290,Ultra High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+38725,39,Adult,154717,Ultra High,4_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+42418,26,Young Adult,134989,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+26624,31,Adult,236158,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+52827,29,Young Adult,53672,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+44876,69,Elderly,331832,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+15678,30,Young Adult,89679,High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+57010,58,Senior,19448,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+10046,66,Elderly,9185,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+1055,83,Elderly,7171,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+46648,25,Young Adult,63950,High,2_person,nonfamily_single,2,F&B Eatery/Drinking Places,Car,Car
+16978,29,Young Adult,53672,Moderate,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+33528,22,Young Adult,33276,Moderate,3_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+1525,34,Adult,0,Debt,3_person,married_couple,1,F&B Eatery/Drinking Places,Public_transport,Car
+62966,63,Elderly,10314,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+20043,31,Adult,120763,Ultra High,3_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Public_transport
+63657,57,Senior,126044,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+22208,19,Young Adult,0,Debt,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+5154,64,Elderly,8372,Low,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+45662,53,Senior,58792,Moderate,5_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+14126,20,Young Adult,16101,Low,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+28900,77,Elderly,12881,Low,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+5664,24,Young Adult,23986,Low,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+1806,32,Adult,9446,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+49177,37,Adult,0,Debt,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+58288,22,Young Adult,10101,Low,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Walking
+17145,21,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+48319,17,Teen,1620,Low,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+29958,62,Elderly,15234,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+65808,56,Senior,8990,Low,7_plus_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+2970,52,Senior,19510,Low,4_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+58837,46,Middle Age,60608,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+29550,37,Adult,129656,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+39767,22,Young Adult,3094,Low,2_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Walking
+16465,58,Senior,0,Debt,3_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+493,19,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Walking
+25108,34,Adult,97246,Very High,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+50110,64,Elderly,11777,Low,2_person,family_single,1,F&B Eatery/Drinking Places,Walking,Car
+41432,62,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+48348,64,Elderly,11600,Low,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+48888,51,Senior,90913,Very High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+46569,26,Young Adult,70230,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+10482,30,Young Adult,0,Debt,6_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+28523,77,Elderly,13333,Low,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+32767,27,Young Adult,0,Debt,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+6026,21,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+23365,27,Young Adult,42184,Moderate,3_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+40006,29,Young Adult,52527,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+30151,48,Middle Age,69603,High,3_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+30844,47,Middle Age,199070,Ultra High,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+62888,38,Adult,36100,Moderate,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+27475,62,Elderly,0,Debt,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+22689,36,Adult,226919,Ultra High,6_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+53106,58,Senior,84368,High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+53555,59,Senior,142430,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+1384,26,Young Adult,70230,High,3_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+26771,72,Elderly,113136,Very High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+20895,44,Middle Age,0,Debt,4_person,married_couple,1,F&B Eatery/Drinking Places,Public_transport,Car
+61974,29,Young Adult,52,Low,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+27414,32,Adult,30304,Moderate,3_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+23241,38,Adult,85610,High,2_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+21737,26,Young Adult,37132,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+11284,38,Adult,97987,Very High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+53739,23,Young Adult,30943,Moderate,6_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+50825,30,Young Adult,64828,High,2_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Walking
+23070,34,Adult,30943,Moderate,6_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+43909,53,Senior,5050,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+32705,38,Adult,1620,Low,4_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+35318,33,Adult,126552,Ultra High,4_person,married_couple,2,F&B Eatery/Drinking Places,Walking,Car
+28799,21,Young Adult,0,Debt,5_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+46069,39,Adult,26836,Low,5_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+63798,35,Adult,69150,High,1_person,living_alone,1,F&B Eatery/Drinking Places,Car,Car
+2722,56,Senior,9661,Low,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+10979,24,Young Adult,34801,Moderate,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+20108,26,Young Adult,61887,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+17648,29,Young Adult,51572,Moderate,4_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+21251,35,Adult,361008,Ultra High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+14925,25,Young Adult,30304,Moderate,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+29176,74,Elderly,0,Debt,3_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+45697,86,Elderly,35423,Moderate,2_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+58360,75,Elderly,32376,Moderate,1_person,living_alone,0,F&B Eatery/Drinking Places,Car,Public_transport
+66510,32,Adult,0,Debt,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+46060,89,Elderly,87882,High,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+12563,59,Senior,141308,Ultra High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+33583,33,Adult,0,Debt,4_person,married_couple,2,F&B Eatery/Special Food Services,Walking,Car
+36787,79,Elderly,18982,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+7607,19,Young Adult,3030,Low,5_person,married_couple,2,F&B Eatery/Drinking Places,Public_transport,Car
+53526,27,Young Adult,6590,Low,2_person,family_single,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+25848,21,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+36855,34,Adult,126774,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+59329,61,Elderly,30056,Moderate,7_plus_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+22748,68,Elderly,10933,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+30346,36,Adult,378,Low,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+51049,63,Elderly,9091,Low,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+31389,48,Middle Age,29294,Low,3_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Walking,Car
+58162,44,Middle Age,17534,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+14547,70,Elderly,27273,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+23800,49,Middle Age,64406,High,6_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+9046,62,Elderly,10546,Low,4_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Car
+60575,49,Middle Age,39195,Moderate,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+58462,74,Elderly,6440,Low,4_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+3970,65,Elderly,53807,Moderate,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+51681,63,Elderly,0,Debt,6_person,married_couple,1,F&B Eatery/Drinking Places,Car,Car
+44721,78,Elderly,21041,Low,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+28161,18,Teen,0,Debt,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+6922,30,Young Adult,10372,Low,3_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+41675,69,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+660,22,Young Adult,5367,Low,3_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+57226,28,Young Adult,0,Debt,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+31645,22,Young Adult,0,Debt,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+25128,49,Middle Age,0,Debt,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+17502,58,Senior,102644,Very High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+17671,37,Adult,107569,Very High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+62426,22,Young Adult,43218,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+53084,43,Middle Age,44226,Moderate,3_person,family_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+7358,94,Elderly,15126,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Car,Walking
+51468,46,Middle Age,107344,Very High,2_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+17801,55,Senior,61478,High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+28991,73,Elderly,71170,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+51667,26,Young Adult,61887,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+27167,27,Young Adult,16101,Low,5_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+64897,27,Young Adult,83842,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+39322,62,Elderly,643462,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+50146,79,Elderly,8331,Low,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+60717,68,Elderly,261921,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+53444,68,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+54328,37,Adult,162070,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+34229,21,Young Adult,0,Debt,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Car,Walking
+2409,68,Elderly,0,Debt,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+296,83,Elderly,485879,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+32244,31,Adult,128931,Ultra High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+51016,26,Young Adult,0,Debt,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+18296,63,Elderly,71713,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+49712,31,Adult,70710,High,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Car,Walking
+7548,76,Elderly,30056,Moderate,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+7942,80,Elderly,11020,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Car,Walking
+53546,53,Senior,0,Debt,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+17529,58,Senior,75141,High,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+48890,23,Young Adult,63276,High,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Car,Walking
+58091,95,Elderly,54563,Moderate,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+5789,80,Elderly,10048,Low,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+66385,66,Elderly,9491,Low,1_person,living_alone,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+29405,59,Senior,158190,Ultra High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+60857,70,Elderly,22568,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+57698,26,Young Adult,26817,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+65658,75,Elderly,4848,Low,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+40146,42,Middle Age,6395,Low,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+6553,64,Elderly,23940,Low,2_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+64336,56,Senior,30304,Moderate,5_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+37533,42,Middle Age,90913,Very High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+29181,90,Elderly,136151,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+57031,71,Elderly,6333,Low,3_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+20534,37,Adult,165032,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+45188,69,Elderly,54745,Moderate,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+26411,28,Young Adult,52491,Moderate,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+38492,19,Young Adult,3030,Low,5_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+42623,59,Senior,82831,High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+4931,62,Elderly,293952,Ultra High,1_person,living_alone,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+9638,84,Elderly,12749,Low,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+49907,18,Teen,0,Debt,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+30428,60,Senior,0,Debt,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+13795,30,Young Adult,0,Debt,3_person,married_couple,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+61104,31,Adult,10314,Low,5_person,married_couple,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+8381,48,Middle Age,27011,Low,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+54535,24,Young Adult,65659,High,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+49629,36,Adult,114529,Very High,4_person,family_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+2886,43,Middle Age,0,Debt,5_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+1883,35,Adult,39900,Moderate,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+4190,75,Elderly,12047,Low,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+54619,66,Elderly,35209,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+32975,84,Elderly,8736,Low,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+37118,34,Adult,39020,Moderate,3_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+30565,32,Adult,197119,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+25218,30,Young Adult,43218,Moderate,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+41509,94,Elderly,38896,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+16375,79,Elderly,330683,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+7630,58,Senior,36100,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+4761,62,Elderly,10546,Low,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+62586,47,Middle Age,121217,Ultra High,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+2723,44,Middle Age,135058,Ultra High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+50945,56,Senior,0,Debt,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+9884,51,Senior,92805,Very High,3_person,family_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+55691,42,Middle Age,9697,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+54217,34,Adult,124254,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+16877,50,Middle Age,28092,Low,6_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+45227,43,Middle Age,151914,Ultra High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+20637,43,Middle Age,5050,Low,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Walking
+23212,63,Elderly,27443,Low,2_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+34231,50,Middle Age,0,Debt,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+496,76,Elderly,0,Debt,5_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+41872,26,Young Adult,30943,Moderate,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+44464,77,Elderly,13333,Low,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+4008,61,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+44725,79,Elderly,8331,Low,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+35055,27,Young Adult,108155,Very High,3_person,nonfamily_single,3_plus,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+18582,28,Young Adult,113785,Very High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+8655,39,Adult,32203,Moderate,3_person,married_couple,1,F&B Eatery/Drinking Places,Public_transport,Walking
+11982,23,Young Adult,12377,Low,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+41925,34,Adult,110365,Very High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+33212,26,Young Adult,65385,High,3_person,nonfamily_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+43036,38,Adult,59966,Moderate,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+28798,59,Senior,7645,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+31250,70,Elderly,34037,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+8630,24,Young Adult,25786,Low,2_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+33440,31,Adult,68689,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+50053,28,Young Adult,64828,High,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+25595,23,Young Adult,45084,Moderate,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+34262,30,Young Adult,30943,Moderate,6_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Walking
+59873,22,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+63220,31,Adult,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+38029,66,Elderly,14337,Low,1_person,living_alone,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+44512,78,Elderly,68549,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+36519,29,Young Adult,52527,Moderate,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+2670,59,Senior,24850,Low,4_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+17140,26,Young Adult,40075,Moderate,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+55423,64,Elderly,0,Debt,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+47985,62,Elderly,125593,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+46146,36,Adult,118851,Very High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+2083,59,Senior,101014,Very High,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Car,Walking
+32848,26,Young Adult,103351,Very High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+64843,19,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+56795,26,Young Adult,78390,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+50526,51,Senior,15819,Low,3_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+22923,56,Senior,131825,Ultra High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+46918,22,Young Adult,0,Debt,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+42464,64,Elderly,105198,Very High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+46835,56,Senior,33006,Moderate,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+26972,63,Elderly,61887,High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+63751,33,Adult,64406,High,3_person,nonfamily_single,2,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+6572,25,Young Adult,51572,Moderate,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+14166,29,Young Adult,26943,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+33305,52,Senior,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+45468,56,Senior,47476,Moderate,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+13407,49,Middle Age,11593,Low,5_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+21040,49,Middle Age,82225,High,2_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+33414,37,Adult,100689,Very High,5_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+57523,35,Adult,73927,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+12482,40,Adult,0,Debt,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+18570,35,Adult,112712,Very High,5_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+35877,28,Young Adult,56948,Moderate,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+66536,44,Middle Age,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+65355,85,Elderly,50890,Moderate,2_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+48591,28,Young Adult,69775,High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+23131,60,Senior,51572,Moderate,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+27126,56,Senior,52730,Moderate,4_person,family_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+9624,65,Elderly,11344,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+24399,67,Elderly,30304,Moderate,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+47703,54,Senior,5157,Low,4_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+65607,44,Middle Age,27011,Low,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+49394,27,Young Adult,43218,Moderate,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+8107,40,Adult,134181,Ultra High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+30846,26,Young Adult,48621,Moderate,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+8524,79,Elderly,29739,Low,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+35798,31,Adult,20202,Low,4_person,nonfamily_single,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+2102,38,Adult,633360,Ultra High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+42322,31,Adult,8747,Low,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+8498,90,Elderly,24689,Low,1_person,living_alone,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+39913,27,Young Adult,124443,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+15522,25,Young Adult,37816,Moderate,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+36659,24,Young Adult,63276,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+58788,66,Elderly,27642,Low,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+22414,47,Middle Age,28231,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+1995,43,Middle Age,59824,Moderate,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+27528,23,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+65626,58,Senior,102644,Very High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+19814,53,Senior,0,Debt,3_person,family_single,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+43554,65,Elderly,11344,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+21676,60,Senior,22398,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+24435,75,Elderly,10756,Low,3_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+28834,27,Young Adult,0,Debt,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+66255,33,Adult,51,Low,3_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+4925,20,Young Adult,8251,Low,3_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+37743,33,Adult,10314,Low,3_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+30820,61,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+23697,33,Adult,111115,Very High,4_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+62528,79,Elderly,17374,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+9422,33,Adult,35329,Moderate,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+43407,57,Senior,53672,Moderate,4_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+2978,45,Middle Age,37816,Moderate,7_plus_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+3573,43,Middle Age,18485,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+7372,68,Elderly,44333,Moderate,2_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+2590,23,Young Adult,26970,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+4578,59,Senior,141308,Ultra High,4_person,married_couple,2,F&B Eatery/Drinking Places,Car,Car
+1115,28,Young Adult,73822,High,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+45783,22,Young Adult,10734,Low,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+3088,73,Elderly,21724,Low,4_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+46553,20,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Walking
+3466,37,Adult,200375,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+54297,23,Young Adult,35423,Moderate,4_person,nonfamily_single,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+4261,25,Young Adult,82259,High,3_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+19333,47,Middle Age,27314,Low,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+62124,70,Elderly,8909,Low,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+23555,43,Middle Age,133978,Ultra High,7_plus_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+46515,44,Middle Age,16162,Low,5_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+58946,22,Young Adult,10048,Low,2_person,family_single,0,F&B Eatery/Drinking Places,Walking,Walking
+23772,65,Elderly,34243,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+5229,28,Young Adult,150281,Ultra High,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Public_transport
+13262,67,Elderly,19826,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+21392,80,Elderly,85256,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+65708,29,Young Adult,137098,Ultra High,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+41000,24,Young Adult,17180,Low,3_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+63668,37,Adult,75931,High,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+51690,27,Young Adult,40405,Moderate,5_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+21767,47,Middle Age,31638,Moderate,4_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+14961,23,Young Adult,71185,High,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+40392,62,Elderly,0,Debt,5_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+59104,36,Adult,105460,Very High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+25411,40,Adult,51572,Moderate,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+14481,32,Adult,148529,Ultra High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+7025,24,Young Adult,1279,Low,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+28873,29,Young Adult,108047,Very High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+799,26,Young Adult,30583,Moderate,3_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+60119,35,Adult,39195,Moderate,4_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+62103,29,Young Adult,111115,Very High,2_person,nonfamily_single,2,F&B Eatery/Drinking Places,Walking,Car
+427,53,Senior,50810,Moderate,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+42679,91,Elderly,131817,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+17129,78,Elderly,46971,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+56193,49,Middle Age,32692,Moderate,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+40670,21,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+56150,76,Elderly,20420,Low,4_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Car
+47606,47,Middle Age,0,Debt,6_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+11882,66,Elderly,0,Debt,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+27114,43,Middle Age,18485,Low,7_plus_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+14184,32,Adult,41258,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+62576,24,Young Adult,50507,Moderate,4_person,nonfamily_single,3_plus,F&B Eatery/Drinking Places,Walking,Car
+61986,47,Middle Age,26365,Low,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Walking
+1391,32,Adult,93789,Very High,2_person,nonfamily_single,0,F&B Eatery/Special Food Services,Walking,Walking
+62795,37,Adult,80508,High,1_person,living_alone,1,F&B Eatery/Drinking Places,Walking,Car
+56395,23,Young Adult,30943,Moderate,6_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+66778,24,Young Adult,30943,Moderate,3_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+11498,83,Elderly,50621,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+7634,38,Adult,151521,Ultra High,1_person,living_alone,1,F&B Eatery/Special Food Services,Walking,Public_transport
+59800,64,Elderly,135058,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+19515,57,Senior,40075,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+30990,41,Middle Age,15819,Low,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+59614,85,Elderly,12655,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+33000,70,Elderly,24850,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+31017,24,Young Adult,77358,High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+52189,62,Elderly,38385,Moderate,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+28460,45,Middle Age,211447,Ultra High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+33158,23,Young Adult,12641,Low,3_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+59343,24,Young Adult,63276,High,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+55874,33,Adult,24754,Low,4_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+39218,22,Young Adult,16207,Low,2_person,family_single,0,F&B Eatery/Drinking Places,Public_transport,Walking
+7423,24,Young Adult,82516,High,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+65293,66,Elderly,6011,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+66768,71,Elderly,203955,Ultra High,1_person,living_alone,2,F&B Eatery/Full-Service Restaurants,Car,Car
+48750,22,Young Adult,20202,Low,4_person,nonfamily_single,0,F&B Eatery/Drinking Places,Walking,Public_transport
+4023,39,Adult,202029,Ultra High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+44706,22,Young Adult,0,Debt,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+38137,20,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+46882,39,Adult,85610,High,4_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+23869,41,Middle Age,3163,Low,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+55782,81,Elderly,299121,Ultra High,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Car
+18125,65,Elderly,14440,Low,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+54868,57,Senior,0,Debt,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+52309,76,Elderly,11655,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+6884,22,Young Adult,10101,Low,4_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Walking
+46978,28,Young Adult,26836,Low,3_person,family_single,1,F&B Eatery/Drinking Places,Walking,Public_transport
+12288,86,Elderly,71720,High,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+29374,23,Young Adult,85862,High,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+17573,79,Elderly,70241,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+45955,27,Young Adult,81204,High,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+7902,28,Young Adult,25253,Low,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+23123,21,Young Adult,5157,Low,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+59985,63,Elderly,17778,Low,5_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+40984,73,Elderly,36100,Moderate,3_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+10051,79,Elderly,28983,Low,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+44152,25,Young Adult,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+3883,24,Young Adult,55698,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+37180,30,Young Adult,0,Debt,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+2314,27,Young Adult,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+12834,27,Young Adult,35355,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+10315,26,Young Adult,112943,Very High,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+65142,28,Young Adult,74750,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+18402,87,Elderly,0,Debt,4_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+40180,22,Young Adult,50507,Moderate,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+55153,24,Young Adult,72201,High,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+56963,36,Adult,123856,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+48710,32,Adult,51572,Moderate,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+9894,78,Elderly,159198,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+4833,44,Middle Age,60608,High,3_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+23057,46,Middle Age,75295,High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+34783,23,Young Adult,60608,High,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+29886,78,Elderly,68549,High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+13418,26,Young Adult,26836,Low,3_person,family_single,1,F&B Eatery/Special Food Services,Walking,Public_transport
+42218,83,Elderly,92830,Very High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+3424,27,Young Adult,48621,Moderate,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+29754,49,Middle Age,20113,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+1892,46,Middle Age,37570,Moderate,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+28702,26,Young Adult,92830,Very High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+20704,25,Young Adult,95963,Very High,3_person,nonfamily_single,3_plus,F&B Eatery/Drinking Places,Public_transport,Car
+9617,52,Senior,3457,Low,2_person,family_single,1,F&B Eatery/Drinking Places,Car,Car
+5947,34,Adult,137098,Ultra High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+67112,31,Adult,2741,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+53232,20,Young Adult,20629,Low,5_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+29414,77,Elderly,11449,Low,3_person,family_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+66646,75,Elderly,14131,Low,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+48025,72,Elderly,17395,Low,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+21346,58,Senior,58003,Moderate,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+49306,32,Adult,15819,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+62494,50,Middle Age,28688,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Drinking Places,Car,Public_transport
+8209,66,Elderly,25786,Low,1_person,living_alone,1,F&B Eatery/Drinking Places,Public_transport,Car
+797,31,Adult,15152,Low,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+34651,30,Young Adult,38644,Moderate,3_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+22174,44,Middle Age,262596,Ultra High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+51044,77,Elderly,19803,Low,6_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+18756,77,Elderly,6482,Low,7_plus_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+24395,21,Young Adult,0,Debt,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+33966,63,Elderly,52730,Moderate,3_person,family_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+59086,83,Elderly,20000,Low,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+35561,51,Senior,127495,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+54810,57,Senior,103145,Very High,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+60463,20,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+22551,22,Young Adult,10101,Low,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+20478,27,Young Adult,64406,High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+38031,64,Elderly,0,Debt,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+49632,26,Young Adult,44293,Moderate,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+39894,86,Elderly,105249,Very High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+62459,39,Adult,44661,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+21942,31,Adult,322034,Ultra High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+13765,90,Elderly,136151,Ultra High,1_person,living_alone,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+41029,42,Middle Age,55557,Moderate,7_plus_person,nonfamily_single,3_plus,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+17715,59,Senior,595338,Ultra High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+28506,43,Middle Age,156668,Ultra High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+50690,21,Young Adult,14764,Low,4_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+19689,27,Young Adult,0,Debt,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+37123,50,Middle Age,0,Debt,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+63086,32,Adult,61618,High,2_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+25019,28,Young Adult,263651,Ultra High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+42364,25,Young Adult,97551,Very High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+17152,78,Elderly,23186,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+29204,69,Elderly,16970,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+31996,94,Elderly,6482,Low,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+34188,60,Senior,103351,Very High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+37973,26,Young Adult,55999,Moderate,3_person,nonfamily_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+1234,58,Senior,25786,Low,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+57752,24,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+18093,22,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+65051,30,Young Adult,62260,High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+9255,28,Young Adult,32414,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+49582,33,Adult,85610,High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+57685,44,Middle Age,512142,Ultra High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+55972,23,Young Adult,34350,Moderate,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+35096,24,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+49379,31,Adult,70710,High,4_person,nonfamily_single,3_plus,F&B Eatery/Drinking Places,Car,Car
+66586,31,Adult,66553,High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+66479,50,Middle Age,15471,Low,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+49729,74,Elderly,0,Debt,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+37001,62,Elderly,46105,Moderate,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+684,37,Adult,210921,Ultra High,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+23202,37,Adult,890,Low,3_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+49069,20,Young Adult,8858,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+24134,49,Middle Age,8990,Low,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+21604,19,Young Adult,0,Debt,1_person,living_alone,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Car
+20169,79,Elderly,40146,Moderate,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+59382,63,Elderly,600070,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+38562,72,Elderly,4373,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+8953,54,Senior,639500,Ultra High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+61173,31,Adult,68689,High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+25135,48,Middle Age,8120,Low,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+41756,22,Young Adult,13709,Low,5_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+56278,58,Senior,5273,Low,5_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Car,Car
+29717,84,Elderly,15471,Low,6_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+43548,39,Adult,0,Debt,2_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+33205,33,Adult,54944,Moderate,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+61693,34,Adult,20528,Low,5_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+26380,24,Young Adult,43238,Moderate,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+44472,46,Middle Age,96610,Very High,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Walking
+31218,50,Middle Age,3030,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+15926,31,Adult,15457,Low,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+39199,25,Young Adult,1212,Low,4_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+8625,84,Elderly,8736,Low,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+25104,39,Adult,23615,Low,4_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Car
+19142,23,Young Adult,0,Debt,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+31740,36,Adult,27849,Low,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+16571,31,Adult,4218,Low,3_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+56454,57,Senior,596959,Ultra High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+50806,24,Young Adult,43218,Moderate,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Walking
+34060,37,Adult,75632,High,3_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+63457,20,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+7855,30,Young Adult,63747,High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+66048,23,Young Adult,6762,Low,3_person,nonfamily_single,1,F&B Eatery/Drinking Places,Car,Car
+33359,70,Elderly,3757,Low,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+50513,57,Senior,429,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+21573,32,Adult,58003,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+37905,43,Middle Age,18485,Low,7_plus_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Car
+14780,83,Elderly,10718,Low,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+10584,49,Middle Age,11593,Low,5_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+47573,26,Young Adult,22176,Low,4_person,nonfamily_single,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+26797,65,Elderly,67679,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+34108,26,Young Adult,0,Debt,4_person,nonfamily_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+16165,22,Young Adult,9091,Low,5_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+10715,60,Senior,316592,Ultra High,2_person,married_couple,1,F&B Eatery/Special Food Services,Walking,Car
+25854,29,Young Adult,80811,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+62871,17,Teen,0,Debt,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+31368,62,Elderly,4744,Low,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+36427,26,Young Adult,84368,High,3_person,family_single,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+15608,18,Teen,2741,Low,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+33187,26,Young Adult,0,Debt,7_plus_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+13248,19,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+9001,60,Senior,79095,High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+1212,70,Elderly,152917,Ultra High,5_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+4979,41,Middle Age,6915,Low,2_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+37656,23,Young Adult,31638,Moderate,6_person,nonfamily_single,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+34241,40,Adult,77565,High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+18344,21,Young Adult,21935,Low,6_person,nonfamily_single,3_plus,F&B Eatery/Limited-Service Restaurants,Car,Walking
+31153,46,Middle Age,23615,Low,5_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+51999,31,Adult,70710,High,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+24754,22,Young Adult,3691,Low,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Walking
+32375,29,Young Adult,21609,Low,5_person,family_single,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+54648,89,Elderly,87882,High,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+29657,78,Elderly,19448,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+60448,26,Young Adult,57966,Moderate,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+64088,40,Adult,25786,Low,7_plus_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+14123,49,Middle Age,84895,High,4_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+55919,58,Senior,36925,Moderate,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+40983,33,Adult,101014,Very High,4_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+38669,40,Adult,21660,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+1095,34,Adult,183679,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+21019,86,Elderly,5152,Low,2_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+14738,46,Middle Age,46460,Moderate,3_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+13882,29,Young Adult,72201,High,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+65154,48,Middle Age,0,Debt,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+19924,29,Young Adult,21092,Low,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+38644,27,Young Adult,26836,Low,6_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+55156,70,Elderly,56770,Moderate,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+18767,24,Young Adult,74264,High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+7041,23,Young Adult,52730,Moderate,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+22361,45,Middle Age,0,Debt,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+1160,53,Senior,10606,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+48583,50,Middle Age,16207,Low,3_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+15445,72,Elderly,12965,Low,4_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Car,Car
+63769,30,Young Adult,21609,Low,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+60697,56,Senior,21609,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+61028,32,Adult,35069,Moderate,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+38070,65,Elderly,24135,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+2768,70,Elderly,18259,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+65267,19,Young Adult,0,Debt,4_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+46127,29,Young Adult,80508,High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+34341,29,Young Adult,33852,Moderate,3_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+47655,33,Adult,36365,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Walking
+27073,26,Young Adult,151521,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+21468,20,Young Adult,12965,Low,2_person,family_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+3951,24,Young Adult,0,Debt,7_plus_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+61232,90,Elderly,32846,Moderate,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+8095,31,Adult,162070,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Drinking Places,Walking,Car
+36135,24,Young Adult,25253,Low,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+46336,71,Elderly,10909,Low,2_person,married_couple,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+65833,26,Young Adult,32324,Moderate,4_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+13435,21,Young Adult,0,Debt,4_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+50481,63,Elderly,46673,Moderate,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+53170,51,Senior,0,Debt,5_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+20300,20,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+20156,26,Young Adult,64828,High,2_person,nonfamily_single,1,F&B Eatery/Drinking Places,Car,Car
+21868,62,Elderly,0,Debt,2_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+22465,60,Senior,25889,Low,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+66544,39,Adult,0,Debt,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+29765,59,Senior,144915,Ultra High,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+17434,23,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+11542,57,Senior,11345,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+26462,25,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+17007,33,Adult,134088,Ultra High,4_person,married_couple,1,F&B Eatery/Drinking Places,Walking,Public_transport
+8009,52,Senior,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+31541,19,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+58173,30,Young Adult,103725,Very High,1_person,living_alone,0,F&B Eatery/Drinking Places,Walking,Walking
+42299,30,Young Adult,48621,Moderate,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+33270,80,Elderly,37632,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+30413,54,Senior,77288,High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+42036,35,Adult,51862,Moderate,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+19464,73,Elderly,0,Debt,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+45278,62,Elderly,35763,Moderate,3_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+44754,68,Elderly,0,Debt,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+50653,35,Adult,59425,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+37763,33,Adult,104044,Very High,1_person,living_alone,3_plus,F&B Eatery/Full-Service Restaurants,Car,Car
+42549,26,Young Adult,35423,Moderate,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+53934,53,Senior,48621,Moderate,4_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+66886,22,Young Adult,0,Debt,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+22515,68,Elderly,36365,Moderate,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+44518,53,Senior,173898,Ultra High,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+52675,70,Elderly,6666,Low,7_plus_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+14439,30,Young Adult,32627,Moderate,3_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+17165,76,Elderly,45242,Moderate,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+20054,21,Young Adult,3025,Low,3_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+24154,71,Elderly,71720,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+30285,23,Young Adult,34350,Moderate,4_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+51684,33,Adult,45930,Moderate,2_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Car,Walking
+41476,84,Elderly,277361,Ultra High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+41632,30,Young Adult,44293,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+33868,17,Teen,0,Debt,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+26707,42,Middle Age,11885,Low,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+4576,21,Young Adult,11345,Low,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+3235,73,Elderly,34169,Moderate,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+59586,29,Young Adult,77358,High,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Walking
+20569,27,Young Adult,48993,Moderate,3_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+59016,34,Adult,16101,Low,3_person,married_couple,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+4722,23,Young Adult,0,Debt,4_person,nonfamily_single,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Car
+47850,32,Adult,124254,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+28584,36,Adult,162070,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+20622,24,Young Adult,107344,Very High,5_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+58458,35,Adult,162070,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+38034,24,Young Adult,30943,Moderate,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+48094,68,Elderly,56729,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+7032,35,Adult,77358,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+38619,72,Elderly,85862,High,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+329,26,Young Adult,21468,Low,2_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+57325,41,Middle Age,22691,Low,4_person,family_single,2,F&B Eatery/Drinking Places,Public_transport,Car
+50624,64,Elderly,129028,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+50983,76,Elderly,79318,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+62075,75,Elderly,100408,Very High,2_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+51696,37,Adult,27011,Low,5_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+37290,22,Young Adult,70710,High,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+61092,22,Young Adult,0,Debt,4_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+33617,68,Elderly,27841,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+33126,76,Elderly,174148,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+25117,32,Adult,48305,Moderate,6_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+7399,32,Adult,111638,Very High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+18594,21,Young Adult,6327,Low,4_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+51939,64,Elderly,0,Debt,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+29250,72,Elderly,322019,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+19586,65,Elderly,25672,Low,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Car
+5607,32,Adult,42937,Moderate,5_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+66450,39,Adult,103145,Very High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+3148,68,Elderly,10520,Low,2_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+34052,42,Middle Age,27273,Low,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+44384,78,Elderly,19394,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+8606,73,Elderly,2531,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+19977,44,Middle Age,60709,High,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+49305,82,Elderly,966910,Ultra High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+67131,27,Young Adult,96610,Very High,2_person,nonfamily_single,0,F&B Eatery/Drinking Places,Public_transport,Walking
+25463,21,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+209,46,Middle Age,56874,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+45482,23,Young Adult,36100,Moderate,2_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+3271,35,Adult,19448,Low,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Public_transport
+37485,51,Senior,53672,Moderate,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+43054,33,Adult,20202,Low,4_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+1004,29,Young Adult,97242,Very High,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+19743,46,Middle Age,20610,Low,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+55942,34,Adult,35355,Moderate,4_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+62553,32,Adult,236158,Ultra High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+13518,52,Senior,96956,Very High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+10532,67,Elderly,7426,Low,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+48015,26,Young Adult,0,Debt,4_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+27457,28,Young Adult,50130,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+65346,24,Young Adult,61887,High,1_person,living_alone,0,F&B Eatery/Drinking Places,Walking,Walking
+44239,53,Senior,0,Debt,2_person,married_couple,2,F&B Eatery/Special Food Services,Car,Car
+28760,50,Middle Age,38789,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+11525,50,Middle Age,15350,Low,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+62578,59,Senior,7426,Low,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+31824,55,Senior,96702,Very High,4_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+6212,22,Young Adult,0,Debt,5_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+58696,30,Young Adult,61887,High,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+36310,25,Young Adult,0,Debt,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+4102,45,Middle Age,65659,High,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+33021,60,Senior,101242,Very High,1_person,living_alone,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+60940,61,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+38952,32,Adult,63276,High,7_plus_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+9340,32,Adult,134181,Ultra High,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Public_transport
+18526,33,Adult,67044,High,2_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Car,Walking
+59356,35,Adult,72201,High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+6403,23,Young Adult,24754,Low,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+12043,51,Senior,0,Debt,3_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+7632,25,Young Adult,53672,Moderate,5_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+1728,35,Adult,25476,Low,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+18055,65,Elderly,11344,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+1868,39,Adult,0,Debt,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+57989,35,Adult,64406,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+14677,79,Elderly,9016,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+60976,23,Young Adult,52730,Moderate,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+31476,27,Young Adult,44609,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+11441,83,Elderly,7171,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+40823,40,Adult,210921,Ultra High,3_person,married_couple,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+47361,33,Adult,0,Debt,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+1971,20,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+40136,34,Adult,202029,Ultra High,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+6704,65,Elderly,59469,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+20067,57,Senior,44011,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+48848,30,Young Adult,644,Low,2_person,nonfamily_single,1,F&B Eatery/Drinking Places,Car,Public_transport
+45823,21,Young Adult,23615,Low,5_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+15588,25,Young Adult,106065,Very High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+694,56,Senior,131825,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+22113,19,Young Adult,0,Debt,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+53800,37,Adult,107344,Very High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+12047,30,Young Adult,61586,High,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+51672,42,Middle Age,83407,High,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+25737,81,Elderly,10967,Low,3_person,married_couple,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+17973,65,Elderly,37816,Moderate,3_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+37820,26,Young Adult,3220,Low,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+35052,27,Young Adult,28092,Low,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+55643,33,Adult,16960,Low,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+32349,69,Elderly,39977,Moderate,2_person,family_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+25574,17,Teen,0,Debt,5_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+35862,56,Senior,19899,Low,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+34445,59,Senior,101014,Very High,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Walking
+2114,27,Young Adult,38163,Moderate,2_person,family_single,1,F&B Eatery/Special Food Services,Walking,Public_transport
+3629,21,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+18657,28,Young Adult,69774,High,5_person,nonfamily_single,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Walking
+27703,36,Adult,15354,Low,3_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+66113,83,Elderly,7171,Low,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+52396,50,Middle Age,14142,Low,3_person,family_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+13923,48,Middle Age,0,Debt,6_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+40794,30,Young Adult,33334,Moderate,4_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+11292,77,Elderly,6482,Low,7_plus_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+37809,51,Senior,2576,Low,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+53969,23,Young Adult,0,Debt,7_plus_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+56748,50,Middle Age,0,Debt,1_person,living_alone,1,F&B Eatery/Drinking Places,Car,Car
+36331,69,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+54711,73,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Drinking Places,Public_transport,Public_transport
+56444,32,Adult,74161,High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+19669,65,Elderly,0,Debt,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+29048,60,Senior,382844,Ultra High,3_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+42722,33,Adult,63276,High,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+40706,23,Young Adult,12209,Low,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+39080,42,Middle Age,206290,Ultra High,5_person,married_couple,1,F&B Eatery/Drinking Places,Public_transport,Car
+26372,48,Middle Age,10018,Low,3_person,married_couple,2,F&B Eatery/Drinking Places,Car,Car
+44871,32,Adult,69774,High,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+27916,53,Senior,8251,Low,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+58364,52,Senior,210921,Ultra High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+44772,62,Elderly,8889,Low,7_plus_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+17040,57,Senior,7023,Low,1_person,living_alone,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+43151,22,Young Adult,47457,Moderate,3_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+39452,28,Young Adult,48305,Moderate,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Walking
+65416,21,Young Adult,1610,Low,7_plus_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+40954,83,Elderly,485879,Ultra High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+62819,75,Elderly,2626,Low,6_person,married_couple,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+64696,65,Elderly,34243,Moderate,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+52383,38,Adult,91243,Very High,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+44399,28,Young Adult,69774,High,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+64954,23,Young Adult,0,Debt,3_person,family_single,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+2484,31,Adult,60506,High,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+45802,23,Young Adult,47457,Moderate,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+64686,48,Middle Age,102720,Very High,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+48774,63,Elderly,12641,Low,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+28072,68,Elderly,10440,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+39973,47,Middle Age,84368,High,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+61333,27,Young Adult,53672,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+38735,78,Elderly,12965,Low,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+38910,26,Young Adult,62667,High,3_person,family_single,0,F&B Eatery/Special Food Services,Public_transport,Walking
+29455,46,Middle Age,23723,Low,6_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+50104,36,Adult,102644,Very High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+45948,26,Young Adult,49951,Moderate,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+25745,48,Middle Age,114146,Very High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+54816,16,Teen,0,Debt,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+65602,50,Middle Age,38789,Moderate,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+3409,51,Senior,82655,High,2_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+21159,56,Senior,41258,Moderate,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+42678,70,Elderly,1581,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+63041,33,Adult,46415,Moderate,3_person,family_single,2,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+10745,33,Adult,92943,Very High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+7192,29,Young Adult,60608,High,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+26617,25,Young Adult,12222,Low,2_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+386,42,Middle Age,0,Debt,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+33927,26,Young Adult,0,Debt,7_plus_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+61541,39,Adult,113459,Very High,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+63756,43,Middle Age,63487,High,2_person,married_couple,2,F&B Eatery/Limited-Service Restaurants,Public_transport,Car
+14674,33,Adult,174009,Ultra High,2_person,nonfamily_single,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+41792,24,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+15185,78,Elderly,15884,Low,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+37552,41,Middle Age,8211,Low,2_person,family_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+7953,49,Middle Age,162070,Ultra High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+65705,28,Young Adult,61586,High,4_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Walking
+8118,43,Middle Age,237286,Ultra High,5_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+46888,58,Senior,0,Debt,3_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Car,Car
+4299,46,Middle Age,21660,Low,3_person,family_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+56195,41,Middle Age,174972,Ultra High,1_person,living_alone,1,F&B Eatery/Drinking Places,Public_transport,Walking
+54304,28,Young Adult,43238,Moderate,3_person,nonfamily_single,2,F&B Eatery/Drinking Places,Car,Car
+50298,24,Young Adult,0,Debt,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+46716,45,Middle Age,182486,Ultra High,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+51089,28,Young Adult,80811,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+24783,19,Young Adult,0,Debt,4_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+12076,56,Senior,9016,Low,2_person,family_single,0,F&B Eatery/Drinking Places,Walking,Public_transport
+20472,32,Adult,47875,Moderate,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+11179,73,Elderly,2701,Low,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+37136,35,Adult,90913,Very High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+5914,26,Young Adult,30253,Moderate,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+49608,90,Elderly,136151,Ultra High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+64007,76,Elderly,39607,Moderate,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Public_transport
+38165,16,Teen,0,Debt,4_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+35476,27,Young Adult,1054,Low,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+53010,59,Senior,95925,Very High,3_person,family_single,3_plus,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+57688,71,Elderly,8643,Low,1_person,living_alone,2,F&B Eatery/Limited-Service Restaurants,Walking,Car
+16480,31,Adult,72730,High,2_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+28083,80,Elderly,329105,Ultra High,7_plus_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+3130,72,Elderly,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+8015,23,Young Adult,32414,Moderate,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Walking
+27050,71,Elderly,85610,High,1_person,living_alone,1,F&B Eatery/Full-Service Restaurants,Car,Car
+6780,70,Elderly,9192,Low,2_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+44891,59,Senior,24850,Low,4_person,family_single,0,F&B Eatery/Limited-Service Restaurants,Car,Public_transport
+6618,26,Young Adult,75632,High,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Public_transport
+35395,46,Middle Age,31718,Moderate,4_person,family_single,1,F&B Eatery/Full-Service Restaurants,Car,Car
+20157,70,Elderly,330317,Ultra High,7_plus_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Walking,Car
+10559,25,Young Adult,67044,High,2_person,married_couple,1,F&B Eatery/Drinking Places,Car,Walking
+35007,54,Senior,7514,Low,5_person,married_couple,3_plus,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+20047,23,Young Adult,7220,Low,5_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+27657,28,Young Adult,25786,Low,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Walking,Walking
+33312,51,Senior,0,Debt,4_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+9399,38,Adult,86437,High,2_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+11219,61,Elderly,0,Debt,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+46707,89,Elderly,883448,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Walking,Car
+54290,27,Young Adult,71713,High,3_person,family_single,3_plus,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+60248,63,Elderly,323966,Ultra High,1_person,living_alone,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+35157,30,Young Adult,21609,Low,4_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+37029,24,Young Adult,4744,Low,2_person,nonfamily_single,0,F&B Eatery/Limited-Service Restaurants,Walking,Walking
+9784,64,Elderly,596906,Ultra High,1_person,living_alone,0,F&B Eatery/Drinking Places,Car,Public_transport
+48671,44,Middle Age,25786,Low,4_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Car,Car
+59323,29,Young Adult,85862,High,2_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+43351,60,Senior,10804,Low,2_person,married_couple,1,F&B Eatery/Special Food Services,Car,Car
+52234,35,Adult,98194,Very High,3_person,married_couple,2,F&B Eatery/Drinking Places,Walking,Car
+46347,64,Elderly,45961,Moderate,3_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+41340,43,Middle Age,73841,High,1_person,living_alone,1,F&B Eatery/Drinking Places,Public_transport,Car
+33822,22,Young Adult,0,Debt,2_person,family_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
+20256,63,Elderly,0,Debt,6_person,married_couple,1,F&B Eatery/Full-Service Restaurants,Walking,Car
+27206,53,Senior,131318,Ultra High,1_person,living_alone,1,F&B Eatery/Drinking Places,Walking,Car
+29732,32,Adult,84368,High,6_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+16226,29,Young Adult,107344,Very High,2_person,nonfamily_single,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+55978,51,Senior,38387,Moderate,3_person,married_couple,1,F&B Eatery/Limited-Service Restaurants,Car,Car
+5591,33,Adult,53672,Moderate,3_person,married_couple,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+63991,34,Adult,0,Debt,6_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Car,Car
+48089,26,Young Adult,0,Debt,4_person,nonfamily_single,1,F&B Eatery/Drinking Places,Car,Car
+67218,32,Adult,61887,High,4_person,nonfamily_single,0,F&B Eatery/Full-Service Restaurants,Walking,Public_transport
+19285,29,Young Adult,33852,Moderate,3_person,nonfamily_single,2,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Car
+53251,20,Young Adult,14046,Low,6_person,married_couple,3_plus,F&B Eatery/Limited-Service Restaurants,Walking,Car
+37036,26,Young Adult,63276,High,3_person,nonfamily_single,3_plus,F&B Eatery/Drinking Places,Public_transport,Car
+14746,22,Young Adult,20629,Low,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Public_transport,Walking
+62919,25,Young Adult,64330,High,3_person,nonfamily_single,1,F&B Eatery/Full-Service Restaurants,Car,Public_transport
+632,71,Elderly,15994,Low,2_person,family_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+60132,39,Adult,64828,High,1_person,living_alone,0,F&B Eatery/Full-Service Restaurants,Walking,Walking
+41936,74,Elderly,36365,Moderate,1_person,living_alone,0,F&B Eatery/Limited-Service Restaurants,Public_transport,Public_transport
+47367,29,Young Adult,83547,High,1_person,living_alone,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Walking
+4535,74,Elderly,48478,Moderate,2_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+29849,76,Elderly,48478,Moderate,2_person,nonfamily_single,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Car,Car
+22353,33,Adult,353550,Ultra High,3_person,married_couple,0,F&B Eatery/Limited-Service Restaurants,Walking,Public_transport
+43314,32,Adult,0,Debt,2_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Walking
+43094,72,Elderly,3864,Low,4_person,married_couple,1,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Public_transport,Car
+12674,40,Adult,153972,Ultra High,2_person,married_couple,2,F&B Eatery/Full-Service Restaurants,Public_transport,Car
+35165,27,Young Adult,0,Debt,3_person,nonfamily_single,0,F&B Eatery/Snack and Nonalcoholic Beverage Bars,Walking,Walking
