@@ -130,4 +130,4 @@ The construction of behavior graph in this model follows the schema of BDI agent
 
 # Acknowledgement
 
-Sincere gratitude to Luis, Parfait, Carlo, Markus, Terasa, and Kent for their invaluable advice and guidance. Their insights have greatly contributed to the completion of this work.
+Sincere gratitude to Luis, Parfait, Carlo, Markus, Terasa, Adrian and Kent for their invaluable advice and guidance. Their insights have greatly contributed to the completion of this work.
