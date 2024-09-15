@@ -69,7 +69,7 @@ desire = 'Eat'
 
 profile = 'a young adult with high income'
 
-model = choice_model = ChoiceModel(
+choice_model = ChoiceModel(
     data_dir='data', desire=desire, sample_num=1000, skip_init=False)
 
 amenity_final_choice, mode_final_choice = choice_model.infer(
@@ -91,7 +91,7 @@ from model import ChoiceModel
 desire = 'Eat'
 profile = 'a young adult with high income'
 
-model = choice_model = ChoiceModel(
+choice_model = ChoiceModel(
     data_dir='data', desire=desire, sample_num=0, skip_init=True)
 
 amenity_final_choice, mode_final_choice = choice_model.infer_without_context(
