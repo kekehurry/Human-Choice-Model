@@ -12,7 +12,7 @@ To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmen
 
 ### Install Neo4j
 
-To run the model, you'll need `neo4j` installed in your machine first.You can create a neo4j docker container with the following command:
+To run the model, you'll need `neo4j` installed in your machine first.You can create a neo4j docker container with the following command, you can set your own `data`,`logs` and `conf` folder. If you're using Windows, ensure that the correct path is set.
 
 ```
 docker run \
@@ -33,7 +33,7 @@ the default user/password used for neo4j is neo4j/neo4jgraph. If you have your o
 
 ### Install Ollama
 
-This model use Ollama to run the local llms, you can download the latest ollama here: https://ollama.com/. Moreover, `nomic-embed-text` and `llama3.1` are used in this model. You run the following command to download these models once you installed ollama client.
+This model use Ollama to run the local llms, you can download the latest ollama here: https://ollama.com/. Moreover, `nomic-embed-text` and `llama3.1` are used in this model. You can run the following command to download these models once you installed ollama client.
 
 ```
 ollama pull nomic-embed-text
