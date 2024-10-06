@@ -4,6 +4,8 @@ The study of human behavior in urban environment is an important field in city s
 
 To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmented Generation (Graph RAG) with LLMs. By integrating graph-based retrieval, the model aims to enhance the contextual understanding and accuracy of the generated behaviors with a small amount of data, making the simulations more reliable and reflective of real-world dynamics.
 
+![demo](assets/human-choice-model.gif)
+
 # Framework
 
 ![methodology](assets/framework.png)
