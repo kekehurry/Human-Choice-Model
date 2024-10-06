@@ -1,7 +1,7 @@
 from .utils.data_preparation import prepare_train_data, prepare_test_data
 from .utils.neo4j_initialization import prepare_neo4j
 from .utils.cypher_generation import get_llm_cypher, get_cypher_query
-from .utils.similarity_score import get_similarity_score
+from .utils.similarity_score import get_similarity_score, get_similar_nodes
 from .utils.link_prediction import create_behavior_subgraph, get_recommendation
 from .utils.llm_choice import get_llm_choice
 from .utils.llm_choice_without_context import get_llm_choice_without_context
@@ -15,7 +15,7 @@ import os
 
 
 class ChoiceModel:
-    def __init__(self, data_dir='../data', desire='Eat', choice_type='mode', sample_num=1000, skip_init=False, seed=42):
+    def __init__(self, data_dir='../data', desire='Eat', choice_type='mode', sample_num=1000, skip_init=False, seed=42, skip_test=False):
         self.data_dir = data_dir
         self.choice_type = choice_type
         self.log_dir = os.path.join(
@@ -31,14 +31,18 @@ class ChoiceModel:
         if not skip_init:
             self.train_data_path = self._prepare_train_data(
                 sample_num=sample_num, desire=desire)
-            self.test_data_path = self._prepare_test_data(desire=desire)
+            if not skip_test:
+                self.test_data_path = self._prepare_test_data(desire=desire)
             self._prepare_neo4j(self.train_data_path)
         else:
             self.train_data_path = os.path.join(
                 self.data_dir, f'train/{sample_num}/{desire}')
+
+        if not skip_test:
             self.test_data_path = os.path.join(
                 self.data_dir, f'test/{desire}.csv')
-        self.log_data_path = os.path.join(self.log_dir, f'{self.desire}.csv')
+            self.log_data_path = os.path.join(
+                self.log_dir, f'{self.desire}.csv')
         self._set_seed(seed)
         return
 
@@ -64,6 +68,9 @@ class ChoiceModel:
 
     def _get_similar_score(self, profile, query_results):
         return get_similarity_score(profile, query_results)
+
+    def _get_similar_nodes(self, profile, query_results, k):
+        return get_similar_nodes(profile, query_results, k)
 
     def _create_behavior_subgraph(self, query_results):
         return create_behavior_subgraph(query_results)

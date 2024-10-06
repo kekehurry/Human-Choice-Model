@@ -47,9 +47,15 @@ def prepare_train_data(data_dir, sample_num, desire='Eat'):
     if not os.path.exists(data_folder):
         os.makedirs(data_folder)
 
-    train_data = train_dataset[train_dataset['travel_purpose']
-                               == desire].reset_index()
-    train_data = train_data[:sample_num]
+    if desire:
+        train_data = train_dataset[train_dataset['travel_purpose']
+                                   == desire].reset_index()
+        train_data = train_data[:sample_num]
+    else:
+        # shuffle the data
+        train_data = train_dataset.sample(
+            frac=1, random_state=42).reset_index(drop=True)
+        train_data = train_data[:sample_num]
 
     person_df = pd.DataFrame(columns=['id', 'age', 'individual_income',
                              'household_size', 'family_structure', 'vehicles', 'description'])
