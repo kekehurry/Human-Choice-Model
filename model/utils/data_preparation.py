@@ -3,7 +3,6 @@ import os
 from tqdm import tqdm
 from .init_settings import init_settings
 
-
 person_props = ['age', 'individual_income',
                 'household_size', 'family_structure', 'vehicles']
 
@@ -37,6 +36,40 @@ def load_orig_data(data_dir):
     test_dataset = trips_th_with_pop[int(
         len(trips_th_with_pop)*0.8):].reset_index()
     return train_dataset, test_dataset
+
+
+def map_amenity(amenity, desire):
+    if desire == 'Eat':
+        if 'Limited-Service' in amenity:
+            return 'Limited-Service Restaurants'
+        elif 'Snack' in amenity:
+            return 'Nonalcoholic Bars'
+        elif 'Full-Service' in amenity:
+            return 'Full-Service Restaurants'
+        elif 'Drinking' in amenity:
+            return 'Drinking Places'
+        else:
+            return amenity
+    elif desire == 'Shop':
+        if 'Consumer Goods' in amenity:
+            return 'Consumer Goods'
+        elif 'Grocery' in amenity:
+            return 'Grocery'
+        elif 'Durable Goods' in amenity:
+            return 'Durable Goods'
+        else:
+            return amenity
+    elif desire == 'Recreation':
+        if 'Leisure & Wellness' in amenity:
+            return 'Leisure & Wellness'
+        elif 'Entertainment' in amenity:
+            return 'Entertainment'
+        elif 'Cultural' in amenity:
+            return 'Cultural'
+        elif 'Hotel' in amenity:
+            return 'Hotel'
+        else:
+            return 'Others'
 
 
 def prepare_train_data(data_dir, sample_num, desire='Eat'):
@@ -82,7 +115,9 @@ def prepare_train_data(data_dir, sample_num, desire='Eat'):
         desire_df.loc[len(desire_df)] = [
             f"Desire_{person_id}_{desire}", row['travel_purpose'], desire_description]
 
-        intention_df.loc[len(intention_df)] = [f"Internsion_{intention_id}", row['top_amenity']+'/'+row['sub_amenity'], row['mode'], row
+        amenity = map_amenity(row['top_amenity'] +
+                              '/'+row['sub_amenity'], desire)
+        intention_df.loc[len(intention_df)] = [f"Internsion_{intention_id}", amenity, row['mode'], row
                                                ['distance_miles'], row['duration_minutes'], row['location_name'], intention_description]
 
         want_to_edge_df.loc[len(want_to_edge_df)] = [
@@ -121,7 +156,6 @@ def prepare_test_data(data_dir, desire='Eat', test_num=1000):
 
     test_data = test_dataset[test_dataset['travel_purpose']
                              == desire].reset_index()
-    test_data = test_data[:test_num]
     income_bins = [-float('inf'), 0, 30000, 60000, 90000, 120000, float('inf')]
     income_labels = ['p.income<0', 'p.income>=0 AND p.income<30000', 'p.income>=30000 AND p.income<60000',
                      'p.income>=60000 AND p.income<90000', 'p.income>=90000 AND p.income<120000', 'p.income>=120000']
@@ -135,10 +169,15 @@ def prepare_test_data(data_dir, desire='Eat', test_num=1000):
         test_data['age'], bins=age_bins, labels=age_labels)
     test_data['target_amenity'] = test_data['top_amenity'] + \
         '/'+test_data['sub_amenity']
+    test_data['target_amenity'] = test_data['target_amenity'].apply(
+        lambda x: map_amenity(x, desire))
     test_data['distance_miles'] = test_data['distance_miles']//init_settings.distance_step * \
         init_settings.distance_step
     test_data['duration_minutes'] = test_data['duration_minutes']//init_settings.duration_step * \
         init_settings.duration_step
+    # remove agen_group == 'Teen', because the training data does not have enough samples
+    test_data = test_data[test_data['age_group'] != 'p.age<18']
+    test_data = test_data[:test_num]
 
     for idx, row in tqdm(test_data.iterrows(), desc=f'preparing test data...', total=test_num):
         cypher = f'''

@@ -6,7 +6,7 @@ from .utils.link_prediction import create_behavior_subgraph, get_recommendation
 from .utils.llm_choice import get_llm_choice
 from .utils.llm_choice_without_context import get_llm_choice_without_context
 from .utils.init_settings import init_settings
-from .utils.evaluation import read_log_data, evaluate_with_cv
+from .utils.evaluation import read_log_data, evaluate_with_cv, get_error_table, get_mapping
 import pandas as pd
 import numpy as np
 import random
@@ -43,6 +43,7 @@ class ChoiceModel:
                 self.data_dir, f'test/{desire}.csv')
             self.log_data_path = os.path.join(
                 self.log_dir, f'{self.desire}.csv')
+        self.seed = seed
         self._set_seed(seed)
         return
 
@@ -78,11 +79,11 @@ class ChoiceModel:
     def _get_recommendation(self, G, choice_type):
         return get_recommendation(G, choice_type)
 
-    def _get_llm_choice(self, profile, desire, choice_type, recommendation, city):
-        return get_llm_choice(profile, desire, choice_type, recommendation, city)
+    def _get_llm_choice(self, profile, desire, choice_type, recommendation, city, additional_condition=''):
+        return get_llm_choice(profile, desire, choice_type, recommendation, city, additional_condition)
 
-    def _get_llm_choice_without_context(self, profile, desire, choice_type, options, city):
-        return get_llm_choice_without_context(profile, desire, choice_type, options, city)
+    def _get_llm_choice_without_context(self, profile, desire, choice_type, options, city, additional_condition=''):
+        return get_llm_choice_without_context(profile, desire, choice_type, options, city, additional_condition)
 
     def _get_final_choice(self, llm_choice):
         try:
@@ -97,12 +98,23 @@ class ChoiceModel:
         return choice
 
     def _read_log_data(self, log_path, test_path):
-        return read_log_data(log_path, test_path)
+        desire = self.desire
+        return read_log_data(log_path, test_path, desire)
 
     def _evaluate_with_cv(self, data, choice_type, figsize=(20, 5), plot=False):
-        return evaluate_with_cv(data, choice_type, figsize=figsize, plot=plot)
+        desire = self.desire
+        return evaluate_with_cv(data, choice_type, desire, figsize=figsize, plot=plot)
 
-    def infer(self, profile, top_k=50, city='Boston', mode='infer'):
+    def _get_error_table(self, x_label):
+        choice_type = self.choice_type
+        log_path = self.log_data_path
+        test_path = self.test_data_path
+        desire = self.desire
+        self._set_seed(self.seed)
+        data = read_log_data(log_path, test_path, desire)
+        return get_error_table(data, x_label, choice_type, desire)
+
+    def infer(self, profile, top_k=50, city='Boston', additional_condition='', mode='infer'):
         desire = self.desire
 
         # mannally extract cypher information for more accurate results in experiment
@@ -126,28 +138,31 @@ class ChoiceModel:
         mode_recommendation = self._get_recommendation(
             behavior_graph, choice_type='Mode')
         mode_llm_choice = self._get_llm_choice(
-            profile, desire, 'Mode', mode_recommendation, city)
+            profile, desire, 'Mode', mode_recommendation, city, additional_condition)
         mode_final_choice = self._get_final_choice(mode_llm_choice)
         self.logs.loc[len(self.logs)] = [person_id, profile, top_k, desire, city, cypher,
                                          amenity_recommendation, amenity_llm_choice, amenity_final_choice,
                                          mode_recommendation, mode_llm_choice, mode_final_choice]
         return amenity_final_choice, mode_final_choice
 
-    def infer_without_context(self, profile, city='Boston', mode='infer'):
+    def infer_without_context(self, profile, city='Boston', additional_condition='', mode='infer'):
         desire = self.desire
+        mapping = get_mapping(desire=desire)
         if mode == 'experiment':
             person_id = profile['person_id']
             profile = f"A {profile['age']} year old person, living in a {profile['family_structure']} family with {profile['household_size']} members. The person has {profile['vehicles']} vehicles and an annual income of {profile['individual_income']} dollars."
         else:
             person_id = random.randint(0, 10000)
             profile = str(profile)
-        amenity_options = ['F&B Eatery/Drinking Places', 'F&B Eatery/Snack and Nonalcoholic Beverage Bars',
-                           'F&B Eatery/Full-Service Restaurants', 'F&B Eatery/Limited-Service Restaurants',
-                           'F&B Eatery/Special Food Services']
-        mode_options = ['Walking', 'Car', 'Public_transport']
+
+        # options
+        amenity_mapping = mapping['target_amenity']
+        amenity_options = list(amenity_mapping.keys())
+        mode_mapping = mapping['target_mode']
+        mode_options = list(mode_mapping.keys())
 
         amenity_llm_choice = self._get_llm_choice_without_context(
-            profile, desire, 'Amenity', amenity_options, city)
+            profile, desire, 'Amenity', amenity_options, city, additional_condition)
         amenity_final_choice = self._get_final_choice(amenity_llm_choice)
         mode_llm_choice = self._get_llm_choice_without_context(
             profile, desire, 'Mode', mode_options, city)
@@ -168,9 +183,9 @@ class ChoiceModel:
         test_path = self.test_data_path
         choice_type = self.choice_type
         data = self._read_log_data(log_path, test_path)
-        loss, error, kl_divergence = self._evaluate_with_cv(
+        error, kl_divergence = self._evaluate_with_cv(
             data, choice_type, figsize=figsize, plot=plot)
-        return loss, error, kl_divergence
+        return error, kl_divergence
 
     def visualize_graph(self):
         return

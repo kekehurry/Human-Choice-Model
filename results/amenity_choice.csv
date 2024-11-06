@@ -1,0 +1,7 @@
+desire,Metrics,RF,MLP,XG,GL
+Eat,KLD,1.79,9.89,2.87,0.07
+Eat,MAPE,17.44,25.95,21.42,7.19
+Shop,KLD,0.1,8.04,0.61,0.05
+Shop,MAPE,9.6,28.0,19.7,7.49
+Recreation,KLD,0.09,0.07,0.34,0.1
+Recreation,MAPE,8.15,6.51,12.41,8.31

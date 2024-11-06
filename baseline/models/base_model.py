@@ -40,13 +40,14 @@ class BaseModel(BaseEstimator, ClassifierMixin):
         self.test_file = os.path.join(self.data_dir, f"test/{self.desire}.csv")
 
         train_dataset, test_dataset, mapping = get_dataset(
-            self.train_file, self.test_file, random_state=self.seed)
+            self.train_file, self.test_file, self.desire, random_state=self.seed)
         train_dataset = train_dataset[:self.sample_num].reset_index(drop=True)
         test_dataset = test_dataset.reset_index(
             drop=True)
 
-        self.train_dataset = train_dataset
-        self.test_dataset = test_dataset
+        # remove teen group, because the training data does not have enough samples
+        self.train_dataset = train_dataset[train_dataset['age_group'] != 'Teen']
+        self.test_dataset = test_dataset[test_dataset['age_group'] != 'Teen']
         self.mapping = mapping
 
         return train_dataset, test_dataset, mapping
@@ -69,12 +70,9 @@ class BaseModel(BaseEstimator, ClassifierMixin):
 
     def optimize(self):
         self.init()
-        class_labels = range(
-            len(self.mapping[f'target_{self.choice_type}'].keys()))
-        scorer = make_scorer(log_loss, greater_is_better=False,
-                             needs_proba=True, labels=class_labels)
+        scorer = make_scorer(self._cal_kl_devergence, greater_is_better=False)
         grid_search = GridSearchCV(
-            self.model, self.param_grid, cv=5, scoring=scorer, n_jobs=-1)
+            self.model, self.param_grid, cv=3, n_jobs=-1, scoring=scorer)
         grid_search.fit(self.X_train, self.y_train)
         best_params = grid_search.best_params_
         best_score = grid_search.best_score_
@@ -102,7 +100,7 @@ class BaseModel(BaseEstimator, ClassifierMixin):
     def predict_proba(self, X_test):
         return self.model.predict_proba(X_test)
 
-    def get_results(self,):
+    def get_results(self):
 
         results = self.test_dataset.copy()
 
@@ -131,7 +129,10 @@ class BaseModel(BaseEstimator, ClassifierMixin):
         P = np.clip(P, epsilon, 1)
 
         Q = np.array(Q)
-        Q = Q / np.sum(Q)
+        Q_sum = np.sum(Q)
+        if Q_sum == 0:
+            return 1
+        Q = Q / Q_sum
         Q = np.clip(Q, epsilon, 1)
 
         # Calculate the KL divergence
@@ -142,8 +143,10 @@ class BaseModel(BaseEstimator, ClassifierMixin):
 
         y = f'target_{self.choice_type}'
         pred_y = f'predict_{self.choice_type}'
+
         x_order = list(self.mapping[x].keys())
-        y_order = list(self.mapping[y].keys())
+        reversed_map = {v: k for k, v in self.mapping[y].items()}
+        y_order = list(reversed_map.values())
 
         contingency_table = pd.crosstab(data[y], data[x])
         percentage_table = contingency_table.div(
@@ -162,7 +165,7 @@ class BaseModel(BaseEstimator, ClassifierMixin):
         predict_percentage_table = predict_percentage_table.reindex(
             y_order, axis=0, fill_value=0)
 
-        error_table = predict_percentage_table-percentage_table
+        error_table = (predict_percentage_table-percentage_table)*100
 
         average_error = error_table.abs().mean()
         total_average_error = average_error.mean()
@@ -192,31 +195,44 @@ class BaseModel(BaseEstimator, ClassifierMixin):
             plt.show()
         return total_average_error, kl_divergence
 
+    def get_error_table(self, x_label):
+        data = self.get_results()
+        y = f'target_{self.choice_type}'
+        pred_y = f'predict_{self.choice_type}'
+
+        # x_order = list(self.mapping[x_label].keys())
+        # y_order = list(self.mapping[y].keys())
+
+        x_order = list(self.mapping[x_label].keys())
+        reversed_map = {v: k for k, v in self.mapping[y].items()}
+        y_order = list(reversed_map.values())
+
+        contingency_table = pd.crosstab(data[y], data[x_label])
+        percentage_table = contingency_table.div(
+            contingency_table.sum(axis=0), axis=1)
+        percentage_table = percentage_table.reindex(
+            x_order, axis=1, fill_value=0)
+        percentage_table = percentage_table.reindex(
+            y_order, axis=0, fill_value=0)
+
+        predict_contingency_table = pd.crosstab(
+            data[pred_y], data[x_label])
+        predict_percentage_table = predict_contingency_table.div(
+            contingency_table.sum(axis=0), axis=1)
+        predict_percentage_table = predict_percentage_table.reindex(
+            x_order, axis=1, fill_value=0)
+        predict_percentage_table = predict_percentage_table.reindex(
+            y_order, axis=0, fill_value=0)
+
+        percentage_table = percentage_table*100
+        predict_percentage_table = predict_percentage_table*100
+        error_table = predict_percentage_table-percentage_table
+        return percentage_table, predict_percentage_table, error_table
+
     def evaluate_with_cv(self, figsize=(20, 5), plot=False):
-        losses = []
 
         data = self.get_results()
 
-        y_true = np.array(data[f'target_{self.choice_type}'])
-
-        y_true_numeric = np.array(data[f'target_{self.choice_type}_numeric'])
-        y_pred_probs = np.vstack(data[f'{self.choice_type}_probs'])
-
-        # split X_test and y_test into cv folds
-        num_classes = len(self.mapping[f'target_{self.choice_type}'].keys())
-        categories = [list(range(num_classes))]
-        encoder = OneHotEncoder(sparse_output=False, categories=categories)
-        y_onehot = encoder.fit_transform(y_true_numeric.reshape(-1, 1))
-
-        indexes = [np.arange(len(y_true))]
-        for test_index in indexes:
-            # log loss
-            y_fold_onehot = y_onehot[test_index]
-            y_fold_prob = y_pred_probs[test_index]
-            loss = log_loss(y_fold_onehot, y_fold_prob)
-            losses.append(loss)
-        loss = np.mean(losses)
-        # error
         error = {}
         kl_divergence = {}
 
@@ -229,7 +245,7 @@ class BaseModel(BaseEstimator, ClassifierMixin):
         error['mean'] = mean_error
         kl_divergence['mean'] = mean_kl_divergence
 
-        return loss, error, kl_divergence
+        return error, kl_divergence
 
     def run_experiment(self, best_params=None):
         # load dataset

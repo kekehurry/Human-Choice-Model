@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from .init_settings import init_settings
 
 choice_template = """
-What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}?
+What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}? {additional_condition}
 -
 Context: This is the reference of people who have similar profile with the given profile in Boston and their choice.
 if scored is provided, higher socre of related choice in context means more likely to be chosen by people with similar profile.
@@ -27,7 +27,7 @@ Answer Format:
 """
 
 
-def get_llm_choice(profile, desire, choice_type, recommendation, city='Boston'):
+def get_llm_choice(profile, desire, choice_type, recommendation, city='Boston', additional_condition=''):
 
     choose_prompt = ChatPromptTemplate.from_messages(
         [
@@ -49,7 +49,8 @@ def get_llm_choice(profile, desire, choice_type, recommendation, city='Boston'):
         "desire": desire,
         "choice_type": choice_type,
         "recommendation": recommendation,
-        "city": city
+        "city": city,
+        "additional_condition": additional_condition
     })
 
     return answer

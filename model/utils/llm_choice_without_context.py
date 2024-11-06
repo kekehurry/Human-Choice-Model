@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from .init_settings import init_settings
 
 choice_template = """
-What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}?
+What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}? {additional_condition}
 This is the options : {options}
 
 Note: 
@@ -21,7 +21,7 @@ Answer Format:
 """
 
 
-def get_llm_choice_without_context(profile, desire, choice_type, options, city='Boston'):
+def get_llm_choice_without_context(profile, desire, choice_type, options, city='Boston', additional_condition=''):
 
     choose_prompt = ChatPromptTemplate.from_messages(
         [
@@ -43,7 +43,8 @@ def get_llm_choice_without_context(profile, desire, choice_type, options, city='
         "desire": desire,
         "choice_type": choice_type,
         "options": options,
-        "city": city
+        "city": city,
+        "additional_condition": additional_condition
     })
 
     return answer

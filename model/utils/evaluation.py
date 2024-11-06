@@ -7,47 +7,50 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import log_loss
 import seaborn as sns
 import matplotlib.pyplot as plt
+from .data_preparation import map_amenity
+import numpy as np
+import random
 
-mode_mapping = {
-    'Walking': 0,
-    'Public_transport': 1,
-    'Public transport': 1,
-    'Car': 2,
-    'Driving own car': 2,
-}
-amenity_mapping = {
-    'F&B Eatery/Limited-Service Restaurants': 0,
-    'F&B Eatery/Snack and Nonalcoholic Beverage Bars': 1,
-    'F&B Eatery/Full-Service Restaurants': 2,
-    'F&B Eatery/Drinking Places': 3,
-    # 'F&B Eatery/Special Food Services': 4,
-    'F&amp;B Eatery/Full-Service Restaurants': 2,
-    'F&amp;B Eatery/Snack and Nonalcoholic Beverage Bars': 1
-}
 
-mapping = {
-    "household_size": {'1_person': 1, '2_person': 2, '3_person': 3,
-                       '4_person': 4, '5_person': 5, '6_person': 6, '7_plus_person': 7},
-    "vehicles": {'0': 0, '1': 1, '2': 2, '3_plus': 3},
-    "family_structure": {'living_alone': 0, 'nonfamily_single': 1,
-                         'family_single': 2, 'married_couple': 3},
-    "target_mode": {'Walking': 0, 'Public_transport': 1, 'Car': 2},
-    "target_amenity": {
-        'F&B Eatery/Limited-Service Restaurants': 0,
-        'F&B Eatery/Snack and Nonalcoholic Beverage Bars': 1,
-        'F&B Eatery/Full-Service Restaurants': 2,
-        'F&B Eatery/Drinking Places': 3,
-        # 'F&B Eatery/Special Food Services': 4,
-    },
-    "income_group": {'Debt': 0, 'Low': 1, 'Moderate': 2,
-                     'High': 3, 'Very High': 4, 'Ultra High': 5},
-    "age_group": {'Teen': 0, 'Young Adult': 1, 'Adult': 2,
-                  'Middle Age': 3, 'Senior': 4, 'Elderly': 5}
-}
+def get_mapping(desire):
 
-reversed_mode_mapping = {v: k for k, v in mapping['target_mode'].items()}
+    if desire == 'Eat':
+        amenity_mapping = {
+            'Limited-Service Restaurants': 0,
+            'Nonalcoholic Bars': 1,
+            'Full-Service Restaurants': 2,
+            'Drinking Places': 3,
+        }
+    elif desire == 'Recreation':
+        amenity_mapping = {
+            'Leisure & Wellness': 0,
+            'Entertainment': 1,
+            'Cultural': 2,
+            'Hotel': 3,
+        }
+    elif desire == 'Shop':
+        amenity_mapping = {
+            'Consumer Goods': 0,
+            'Grocery': 1,
+            'Durable Goods': 2,
+        }
+    else:
+        raise ValueError("Invalid desire")
 
-reversed_amenity_mapping = {v: k for k, v in mapping['target_amenity'].items()}
+    mapping = {
+        "household_size": {'1_person': 1, '2_person': 2, '3_person': 3,
+                           '4_person': 4, '5_person': 5, '6_person': 6, '7_plus_person': 7},
+        "vehicles": {'0': 0, '1': 1, '2': 2, '3_plus': 3},
+        "family_structure": {'living_alone': 0, 'nonfamily_single': 1,
+                             'family_single': 2, 'married_couple': 3},
+        "target_mode": {'Walking': 0, 'Public_transport': 1, 'Car': 2},
+        "target_amenity": amenity_mapping,
+        "income_group": {'Debt': 0, 'Low': 1, 'Moderate': 2,
+                         'High': 3, 'Very High': 4, 'Ultra High': 5},
+        "age_group": {'Young Adult': 0, 'Adult': 1,
+                      'Middle Age': 2, 'Senior': 3, 'Elderly': 4}
+    }
+    return mapping
 
 
 def normalize(x):
@@ -58,13 +61,15 @@ def normalize(x):
 
 def cal_kl_devergence(P, Q):
     epsilon = 1e-10
-
     P = np.array(P)
     P = P / np.sum(P)
     P = np.clip(P, epsilon, 1)
 
     Q = np.array(Q)
-    Q = Q / np.sum(Q)
+    Q_sum = np.sum(Q)
+    if Q_sum == 0:
+        return 1
+    Q = Q / Q_sum
     Q = np.clip(Q, epsilon, 1)
 
     # Calculate the KL divergence
@@ -72,24 +77,32 @@ def cal_kl_devergence(P, Q):
     return KL_divergence
 
 
-def get_mode_probs(row):
-    mode_num = len(mapping['target_mode'].keys())
+def get_mode_probs(row, mapping):
+    mode_mapping = mapping['target_mode']
+    mode_num = max(mode_mapping.values()) + 1
     try:
         mode_llm_choice = json.loads(row['mode_llm_choice'])
         mode_probs = np.zeros(mode_num)
         for item in mode_llm_choice['final_answer']:
             option = item['choice'].strip()
-            if option in mode_mapping:
-                index = mode_mapping[option]
-                mode_probs[index] = item['weight']
+            if 'Walk' in option:
+                index = mode_mapping['Walking']
+            elif 'Public' in option:
+                index = mode_mapping['Public_transport']
+            elif 'Car' in option:
+                index = mode_mapping['Car']
+            else:
+                continue
+            mode_probs[index] = item['weight']
         mode_probs = normalize(mode_probs)
     except Exception as e:
         return None
     return mode_probs
 
 
-def get_amenity_probs(row):
-    amenity_num = len(mapping['target_amenity'].keys())
+def get_amenity_probs(row, mapping):
+    amenity_mapping = mapping['target_amenity']
+    amenity_num = max(amenity_mapping.values()) + 1
     try:
         amenity_llm_choice = json.loads(row['amenity_llm_choice'])
         amenity_probs = np.zeros(amenity_num)
@@ -104,27 +117,38 @@ def get_amenity_probs(row):
     return amenity_probs
 
 
-def get_mode_choice(row):
+def get_mode_choice(row, mapping):
+    mode_mapping = mapping['target_mode']
     mode_probs = row['mode_probs']
     if mode_probs is None:
         return None
     # mode_choice = np.random.choice(mode_num, p=mode_probs)
     mode_choice = random.choices(
         range(mode_probs.shape[0]), weights=mode_probs, k=1)[0]
-    return mode_choice
+    choice_key = list(mode_mapping.keys())[mode_choice]
+    final_choice = mode_mapping[choice_key]
+    return final_choice
 
 
-def get_amenity_choice(row):
+def get_amenity_choice(row, mapping):
+    amenity_mapping = mapping['target_amenity']
     amenity_probs = row['amenity_probs']
     if amenity_probs is None:
         return None
     # amenity_choice = np.random.choice(amenity_num, p=amenity_probs)
     amenity_choice = random.choices(
         range(amenity_probs.shape[0]), weights=amenity_probs, k=1)[0]
-    return amenity_choice
+    choice_key = list(amenity_mapping.keys())[amenity_choice]
+    final_choice = amenity_mapping[choice_key]
+    return final_choice
 
 
-def read_log_data(log_path, test_path, test_num=1000):
+def read_log_data(log_path, test_path, desire, test_num=1000):
+    mapping = get_mapping(desire)
+    amenity_mapping = mapping['target_amenity']
+    reversed_amenity_mapping = {v: k for k, v in amenity_mapping.items()}
+    mode_mapping = mapping['target_mode']
+    reversed_mode_mapping = {v: k for k, v in mode_mapping.items()}
 
     test_data = pd.read_csv(test_path, index_col=False)
     income_bins = [-float('inf'), 0, 30000, 60000, 90000, 120000, float('inf')]
@@ -143,15 +167,23 @@ def read_log_data(log_path, test_path, test_num=1000):
     test_data['age_group'] = pd.cut(
         test_data['age'], bins=age_bins, labels=age_labels)
     test_data['target_mode'] = test_data['mode']
+    test_data['target_amenity'] = test_data['target_amenity'].apply(
+        lambda x: map_amenity(x, desire))
+
+    # remove age_group=='Teen', because there is not enough data points in the train set
+    test_data = test_data[test_data['age_group'] != 'Teen']
 
     log_data = pd.read_csv(log_path, index_col=False)
     log_data = log_data.drop(
         columns=['mode_recommendation', 'amenity_recommendation', 'cypher'])
-    log_data['mode_probs'] = log_data.apply(get_mode_probs, axis=1)
-    log_data['amenity_probs'] = log_data.apply(get_amenity_probs, axis=1)
-    log_data['predict_mode_numeric'] = log_data.apply(get_mode_choice, axis=1)
+    log_data['mode_probs'] = log_data.apply(
+        get_mode_probs, axis=1, args=(mapping,))
+    log_data['amenity_probs'] = log_data.apply(
+        get_amenity_probs, axis=1,  args=(mapping,))
+    log_data['predict_mode_numeric'] = log_data.apply(
+        get_mode_choice, axis=1, args=(mapping,))
     log_data['predict_amenity_numeric'] = log_data.apply(
-        get_amenity_choice, axis=1)
+        get_amenity_choice, axis=1, args=(mapping,))
     log_data = log_data.dropna()
 
     pred_data = log_data[['person_id', 'mode_probs',
@@ -184,14 +216,21 @@ def read_log_data(log_path, test_path, test_num=1000):
 
     merged_data = merged_data.dropna()
     merged_data = merged_data[:test_num]
+
     return merged_data
 
 
-def get_error(data, x, choice_type, figsize=(20, 5), plot=False):
+def get_error(data, x, choice_type, desire, figsize=(20, 5), plot=False):
+    mapping = get_mapping(desire)
+
     y = f'target_{choice_type}'
     pred_y = f'predict_{choice_type}'
+
+    # x_order = list(mapping[x].keys())
+    # y_order = list(mapping[y].keys())
     x_order = list(mapping[x].keys())
-    y_order = list(mapping[y].keys())
+    reversed_map = {v: k for k, v in mapping[y].items()}
+    y_order = list(reversed_map.values())
 
     contingency_table = pd.crosstab(data[y], data[x])
     percentage_table = contingency_table.div(
@@ -210,7 +249,7 @@ def get_error(data, x, choice_type, figsize=(20, 5), plot=False):
     predict_percentage_table = predict_percentage_table.reindex(
         y_order, axis=0, fill_value=0)
 
-    error_table = predict_percentage_table-percentage_table
+    error_table = (predict_percentage_table-percentage_table)*100
 
     average_error = error_table.abs().mean()
     total_average_error = average_error.mean()
@@ -241,39 +280,52 @@ def get_error(data, x, choice_type, figsize=(20, 5), plot=False):
     return total_average_error, kl_divergence
 
 
-def evaluate_with_cv(data, choice_type, figsize=(20, 5), plot=False):
-    losses = []
-    y_true = np.array(data[f'target_{choice_type}'])
-    y_true_numeric = np.array(data[f'target_{choice_type}_numeric'])
-    y_pred_probs = np.vstack(data[f'{choice_type}_probs'])
+def get_error_table(data, x_label, choice_type, desire):
 
-    # split X_test and y_test into cv folds
-    num_classes = len(mapping[f'target_{choice_type}'].keys())
-    categories = [list(range(num_classes))]
-    encoder = OneHotEncoder(sparse_output=False, categories=categories)
-    y_onehot = encoder.fit_transform(y_true_numeric.reshape(-1, 1))
-    y_pred_probs = y_pred_probs[:, :num_classes]
+    mapping = get_mapping(desire)
 
-    indexes = [np.arange(len(y_true))]
-    for test_index in indexes:
-        # log loss
-        y_fold_onehot = y_onehot[test_index]
-        y_fold_prob = y_pred_probs[test_index]
-        loss = log_loss(y_fold_onehot, y_fold_prob)
-        losses.append(loss)
+    y = f'target_{choice_type}'
+    pred_y = f'predict_{choice_type}'
+    # x_order = list(mapping[x_label].keys())
+    # y_order = list(mapping[y].keys())
+    x_order = list(mapping[x_label].keys())
+    reversed_map = {v: k for k, v in mapping[y].items()}
+    y_order = list(reversed_map.values())
 
-    loss = np.mean(losses)
+    contingency_table = pd.crosstab(data[y], data[x_label])
+    percentage_table = contingency_table.div(
+        contingency_table.sum(axis=0), axis=1)
+    percentage_table = percentage_table.reindex(
+        x_order, axis=1, fill_value=0)
+    percentage_table = percentage_table.reindex(
+        y_order, axis=0, fill_value=0)
 
+    predict_contingency_table = pd.crosstab(
+        data[pred_y], data[x_label])
+    predict_percentage_table = predict_contingency_table.div(
+        contingency_table.sum(axis=0), axis=1)
+    predict_percentage_table = predict_percentage_table.reindex(
+        x_order, axis=1, fill_value=0)
+    predict_percentage_table = predict_percentage_table.reindex(
+        y_order, axis=0, fill_value=0)
+
+    percentage_table = percentage_table*100
+    predict_percentage_table = predict_percentage_table*100
+    error_table = predict_percentage_table-percentage_table
+    return percentage_table, predict_percentage_table, error_table
+
+
+def evaluate_with_cv(data, choice_type, desire, figsize=(20, 5), plot=False):
     # error
     error = {}
     kl_divergence = {}
 
     for x_label in ['age_group', 'income_group', 'household_size', 'vehicles', 'family_structure']:
         error[x_label], kl_divergence[x_label] = get_error(
-            data, x_label, choice_type, figsize=figsize, plot=plot)
+            data, x_label, choice_type, desire, figsize=figsize, plot=plot)
     mean_error = np.mean(list(error.values()))
     mean_kl_divergence = np.mean(list(kl_divergence.values()))
     error['mean'] = mean_error
     kl_divergence['mean'] = mean_kl_divergence
 
-    return loss, error, kl_divergence
+    return error, kl_divergence
