@@ -6,7 +6,7 @@ To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmen
 
 # Framework
 
-![methodology](assets/Research Framework.png)
+![methodology](<assets/Research Framework.png>)
 
 # Steup
 
