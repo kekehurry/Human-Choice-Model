@@ -4,11 +4,9 @@ The study of human behavior in urban environment is an important field in city s
 
 To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmented Generation (Graph RAG) with LLMs. By integrating graph-based retrieval, the model aims to enhance the contextual understanding and accuracy of the generated behaviors with a small amount of data, making the simulations more reliable and reflective of real-world dynamics.
 
-![demo](assets/human-choice-model.gif)
-
 # Framework
 
-![methodology](assets/framework.png)
+![methodology](assets/Research Framework.png)
 
 # Steup
 
@@ -44,9 +42,10 @@ ollama pull llama3.1
 
 ### Prepare the environment
 
+clone this repo
+
 ```
-git clone https://github.com/CityScope/CS_Human_Choice_Model.git
-cd CS_Human_Choice_Model
+cd Human_Choice_Model
 pip install -r requirements.txt
 ```
 
@@ -119,16 +118,16 @@ The construction of behavior graph in this model follows the schema of BDI agent
 - **Desire**: What the agent want to do. ('Eat','Shop' or 'Recreation')
 - **Intension**: The final choice the agent made. (amenity choice, mobility choice)
 
-# Graph recommondation
-
-![](assets/graph_recommondation.png)
+![](assets/Data Schema.png)
 
 # Validation
 
-**mobility choice**
-![](assets/mobility_choice.png)
-**amenity choice**
-![](assets/amenity_choice.png)
+**The comparison of ML methods(RF,MLP,XG) and proposed method (GL)**
+![](results/Validation.png)
+**Average Percentage Error (APE) of mobility choices across age groups**
+![](<results/mobility_choice(age).png>)
+**Average Percentage Error (APE) of amenity choices across age groups**
+![](<results/mobility_choice(age).png>)
 
 # Acknowledgement
 
