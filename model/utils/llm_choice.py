@@ -5,7 +5,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from .init_settings import init_settings
 
 choice_template = """
-What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}? {additional_condition}
+What {choice_type} would a person who is {profile} and lives in {city} choose, when he want to {desire}? 
+- Additional Condition: {additional_condition}
 -
 Context: This is the reference of people who have similar profile with the given profile in Boston and their choice.
 if scored is provided, higher socre of related choice in context means more likely to be chosen by people with similar profile.
@@ -13,12 +14,13 @@ if scored is provided, higher socre of related choice in context means more like
 
 Note: 
 - Output the weights of all options provided in a json format.
-- You should consider the profile, the choices other people with similar profile did, and the possible cultural difference between Boston and {city}.
+- You should consider the profile, the choices other people with similar profile did, the possible cultural difference between Boston and {city}, and the additional condition.
 - The sum of all weights should equals to 1.
 
 Answer Format:
 {{
-'thought': 'Based on the profile, xxxx. Consider the choices of people with similar profile, xxx. And the culture in {city}, xxx. I think xxx',
+'thought': 'Based on the profile, xxxx. Consider the choices of people with similar profile, xxx. The culture in {city} indicates xxx. I think xxx'.
+'additional_condition': 'xxx(if provided)',
 'final_answer':[
 {{'choice': option1. 'weight': possibility for option1}},{{'choice': option1. 'weight': possibility for option2}},...
 ],
