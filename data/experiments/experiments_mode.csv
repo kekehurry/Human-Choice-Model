@@ -1,0 +1,42 @@
+model_name,desire,num_sample,loss,age_error,income_error,best_params
+randomforest,Eat,2000,1.0030023050759063,0.12592124763248463,0.14234734828507575,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+randomforest,Eat,4000,1.0070368563957595,0.14062777446148553,0.14697549306468752,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 50}"
+randomforest,Eat,6000,1.0010877020010645,0.1551468475152645,0.14303640658888153,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+randomforest,Eat,8000,1.0032911477174786,0.15587793016346438,0.14629828140219195,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 50}"
+randomforest,Eat,10000,0.9938279463875382,0.16245353427888265,0.1503831145538816,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+randomforest,Eat,12000,0.9926680245545899,0.16157057367639313,0.1575913245438986,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+randomforest,Eat,14000,0.9940021137147147,0.17339369160413062,0.15244838578368117,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 50}"
+randomforest,Eat,16000,0.9926239123839018,0.15012901761860312,0.14129106367091085,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 50}"
+randomforest,Eat,18000,0.9897868990779323,0.15670763261646672,0.15122489594773675,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+randomforest,Eat,20000,0.9886161126078138,0.15417600294085515,0.15282936449381535,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+xgboost,Eat,2000,1.0824715430158567,0.17105469575174503,0.18957358807925118,"{'gamma': 0.1, 'learning_rate': 0.001, 'max_depth': None, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,4000,1.0829767650865678,0.10163707611958821,0.10521959971605398,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,6000,1.0829369063111887,0.1333714609574149,0.10968938619325908,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,8000,1.0827072367119277,0.12300582610302785,0.10895429208058012,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,10000,1.082670401341164,0.12822102618848877,0.11661132908132149,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,12000,1.0827602936230338,0.13301297262719544,0.11219854354237459,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,14000,1.082894452756959,0.12204694331292519,0.11243301384618788,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,16000,1.0828868833883447,0.14824675500061898,0.12472019421157066,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 10, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,18000,1.0827684559705026,0.12233559855016961,0.1115685064501476,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 20, 'n_estimators': 100, 'subsample': 0.9}"
+xgboost,Eat,20000,1.0826638904615642,0.1429585266338732,0.13410142094037197,"{'gamma': 0.2, 'learning_rate': 0.001, 'max_depth': 10, 'n_estimators': 100, 'subsample': 0.9}"
+multilayer_perceptron,Eat,2000,0.9805658719700623,0.1929290003506835,0.17696471121566323,"{'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (100, 100), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,4000,0.9864926941035559,0.18003126684755225,0.18867046483429314,"{'activation': 'relu', 'alpha': 1e-05, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,6000,0.9843969546773563,0.19944899323091184,0.19581047554775036,"{'activation': 'relu', 'alpha': 1e-05, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,8000,0.9835537299045005,0.19380654108262704,0.20434146289290078,"{'activation': 'relu', 'alpha': 1e-05, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,10000,0.983145287534456,0.19518020388642168,0.20390010558673421,"{'activation': 'relu', 'alpha': 1e-05, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,12000,0.9839117367074229,0.18519463323380037,0.1975759167960153,"{'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (100, 100), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,14000,0.9832490622541,0.19283458502499096,0.1904790026173235,"{'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,16000,0.9833725088435205,0.18248079231080402,0.1849283994352586,"{'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,18000,0.9831719848898097,0.17886463688987775,0.2025978079826296,"{'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+multilayer_perceptron,Eat,20000,0.9827672445308472,0.17744720479972373,0.18481950728914584,"{'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.0001}"
+proposed_method,Eat,0,1.8086518440580184,0.16390198523420338,0.12077990869521844,
+proposed_method,Eat,2000,1.2598257361310339,0.0987733387858341,0.07148039926035779,
+proposed_method,Eat,4000,1.1742704713414704,0.08821386363547222,0.06084632908007891,
+proposed_method,Eat,6000,1.1385229771108463,0.09382809912902894,0.06674706723524927,
+proposed_method,Eat,8000,1.143327392208345,0.09666381024319619,0.0728208111283793,
+proposed_method,Eat,10000,1.0875665855306464,0.114079935238291,0.06460667301788796,
+proposed_method,Eat,12000,1.2376218137721806,0.10357508818617561,0.06529481646020906,
+proposed_method,Eat,14000,1.1704769996216984,0.09491419217054557,0.06425143028965012,
+proposed_method,Eat,16000,1.0992975568263714,0.085621619341415,0.06277822476061269,
+proposed_method,Eat,18000,1.1768404979183962,0.07850189312435005,0.0783548205276124,
+proposed_method,Eat,20000,1.1952246340267798,0.10012062957367679,0.07315049328634762,
