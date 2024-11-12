@@ -17,8 +17,8 @@ To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmen
 To run the model, you'll need `neo4j` installed in your machine first.You can create a neo4j docker container with the following command, you can set your own `data`,`logs` and `conf` folder. If you're using Windows, ensure that the correct path is set.
 
 ```
-docker run \
-    -it \
+sudo docker run \
+    -itd \
     --restart always \
     --publish=7474:7474 --publish=7687:7687 \
     --env NEO4J_AUTH=neo4j/neo4jgraph \
