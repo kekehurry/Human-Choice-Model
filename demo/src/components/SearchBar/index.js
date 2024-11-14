@@ -47,7 +47,9 @@ export default function SearchBar() {
   const handleReset = (e) => {
     setLoading(true);
     fetch('http://127.0.0.1:5005/init')
-      .then((res) => res.json())
+      .then(async (res) => {
+        return await res.json();
+      })
       .then((data) => {
         setState({
           ...state,
@@ -121,14 +123,14 @@ export default function SearchBar() {
             style={{ width: 100, height: 40 }}
             onClick={handleSearch}
           >
-            {searching && <i class="fa fa-spinner fa-spin"></i>} Search
+            {searching && <i className="fa fa-spinner fa-spin"></i>} Search
           </button>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white mt-1 block px-2 py-2 rounded-md shadow-sm text-sm"
             style={{ width: 100, height: 40 }}
             onClick={handleReset}
           >
-            {loading && <i class="fa fa-spinner fa-spin"></i>} Reset
+            {loading && <i className="fa fa-spinner fa-spin"></i>} Reset
           </button>
         </div>
       </div>

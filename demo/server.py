@@ -14,6 +14,7 @@ from langchain_core.prompts import ChatPromptTemplate
 import json
 import random
 
+
 # neo4j configuration
 url = "bolt://localhost:7687"
 username = "neo4j"
@@ -29,6 +30,48 @@ embedding_model = OllamaEmbeddings(model="nomic-embed-text")
 choice_model = ChatOllama(model='llama3.1', format="json")
 app = Flask(__name__)
 CORS(app)
+
+
+def prepare_dataset():
+    import sys
+    sys.path.append('..')
+
+    from model import ChoiceModel
+
+    # Initialize the model, for the first time, you need to set skip_init to 'False'. it will take a while to prepare the data.
+    # sample_num is the total number of samples to build the dataset.
+
+    choice_model = ChoiceModel(
+        data_dir='../data', desire='Eat', sample_num=1000, skip_init=True, skip_test=True)
+
+    train_data_path = choice_model._prepare_train_data(
+        sample_num=1000, desire=None)
+    choice_model._prepare_neo4j(train_data_path)
+
+    # create similarity links
+    clean_cypher = '''
+    MATCH ()-[r:SIMILAR_TO]->()
+    DELETE r
+    '''
+    graph.query(clean_cypher)
+    link_cypher = '''
+    MATCH (p:Person)
+    CALL {
+    WITH p
+    MATCH (similar:Person)
+    WHERE p.id <> similar.id
+    WITH p, similar, gds.similarity.cosine(p.embedding, similar.embedding) AS similarityScore
+    ORDER BY similarityScore DESC
+    LIMIT 5
+    MERGE (p)-[r:SIMILAR_TO]->(similar)
+    SET r.score = similarityScore, r.type = 'SIMILAR_TO'
+    RETURN count(*) as count
+    }
+    RETURN count(p) as processedNodes
+    '''
+    processedNodes = graph.query(link_cypher)
+    print('Processed Nodes:', processedNodes)
+    return
 
 
 def get_similar_node_ids(profile, desire, k=50):
@@ -62,6 +105,7 @@ return person
 def simple_analysis(query_result):
     intentions = [n for n in query_result['nodes'] if n['type'] == 'Intention']
     people = [n for n in query_result['nodes'] if n['type'] == 'Person']
+
     ages = [{"name": p['id'], "value": p['age']} for p in people]
     incomes = [{"name": p['id'], "value": int(
         p['income']/1000)} for p in people]
@@ -130,6 +174,15 @@ Answer Format:
     return choice
 
 
+def prepare_graph_data(query_result):
+    nodes = query_result['nodes']
+    links = query_result['links']
+    return {
+        'nodes': nodes,
+        'links': links
+    }
+
+
 @app.route('/init', methods=['GET'])
 def init():
     cypher_query = '''
@@ -165,6 +218,7 @@ RETURN
     query_result = query_result[0]
     amenity_choices, mobility_choices, ages, incomes = simple_analysis(
         query_result)
+
     return jsonify({
         'graph': query_result,
         'amenity_choices': amenity_choices,
@@ -253,4 +307,6 @@ RETURN filtered_nodes AS nodes, links
 
 
 if __name__ == '__main__':
+
+    prepare_dataset()
     app.run(host='0.0.0.0', port=5005, debug=True)

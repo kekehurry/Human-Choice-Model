@@ -49,7 +49,7 @@ def map_amenity(amenity, desire):
         elif 'Drinking' in amenity:
             return 'Drinking Places'
         else:
-            return amenity
+            return 'Others'
     elif desire == 'Shop':
         if 'Consumer Goods' in amenity:
             return 'Consumer Goods'
@@ -58,7 +58,7 @@ def map_amenity(amenity, desire):
         elif 'Durable Goods' in amenity:
             return 'Durable Goods'
         else:
-            return amenity
+            return 'Others'
     elif desire == 'Recreation':
         if 'Leisure & Wellness' in amenity:
             return 'Leisure & Wellness'
@@ -70,6 +70,8 @@ def map_amenity(amenity, desire):
             return 'Hotel'
         else:
             return 'Others'
+    else:
+        return amenity
 
 
 def prepare_train_data(data_dir, sample_num, desire='Eat'):
