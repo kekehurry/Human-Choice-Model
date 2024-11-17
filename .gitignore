@@ -2,5 +2,6 @@ __pycache__
 .DS_Store
 .ipynb_checkpoints
 data/train
+data/logs
 .next
 node_modules
