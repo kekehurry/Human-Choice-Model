@@ -8,7 +8,7 @@ from neo4j import GraphDatabase
 
 class Settings:
 
-    url = "bolt://localhost:7687"
+    url = f"bolt://neo4j:7687"
     username = "neo4j"
     password = "neo4jgraph"
 
@@ -20,9 +20,12 @@ class Settings:
         enhanced_schema=True,
     )
 
-    embedding_model = OllamaEmbeddings(model="nomic-embed-text")
-    cypher_model = ChatOllama(model='llama3.1', temperature=0)
-    choice_model = ChatOllama(model='llama3.1', format="json")
+    embedding_model = OllamaEmbeddings(
+        model="nomic-embed-text", base_url=f"http://ollama:11434")
+    cypher_model = ChatOllama(
+        model='llama3.1', temperature=0, base_url=f"http://ollama:11434")
+    choice_model = ChatOllama(
+        model='llama3.1', format="json", base_url=f"http://ollama:11434")
 
     duration_step = 5
     distance_step = 0.5
