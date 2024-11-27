@@ -114,7 +114,7 @@ class ChoiceModel:
         data = read_log_data(log_path, test_path, desire)
         return get_error_table(data, x_label, choice_type, desire)
 
-    def infer(self, profile, top_k=50, city='Boston', additional_condition='', mode='infer'):
+    def infer(self, profile, top_k=50, city='Boston', additional_condition='', mode='infer', in_parallel=False):
         desire = self.desire
 
         # mannally extract cypher information for more accurate results in experiment
@@ -140,12 +140,17 @@ class ChoiceModel:
         mode_llm_choice = self._get_llm_choice(
             profile, desire, 'Mode', mode_recommendation, city, additional_condition)
         mode_final_choice = self._get_final_choice(mode_llm_choice)
-        self.logs.loc[len(self.logs)] = [person_id, profile, top_k, desire, city, cypher,
-                                         amenity_recommendation, amenity_llm_choice, amenity_final_choice,
-                                         mode_recommendation, mode_llm_choice, mode_final_choice]
-        return amenity_final_choice, mode_final_choice
+        if not in_parallel:
+            self.logs.loc[len(self.logs)] = [person_id, profile, top_k, desire, city, cypher,
+                                             amenity_recommendation, amenity_llm_choice, amenity_final_choice,
+                                             mode_recommendation, mode_llm_choice, mode_final_choice]
+            return amenity_final_choice, mode_final_choice
+        else:
+            return [person_id, profile, top_k, desire, city, cypher,
+                    amenity_recommendation, amenity_llm_choice, amenity_final_choice,
+                    mode_recommendation, mode_llm_choice, mode_final_choice]
 
-    def infer_without_context(self, profile, city='Boston', additional_condition='', mode='infer'):
+    def infer_without_context(self, profile, city='Boston', additional_condition='', mode='infer', in_parallel=False):
         desire = self.desire
         mapping = get_mapping(desire=desire)
         if mode == 'experiment':
@@ -167,10 +172,16 @@ class ChoiceModel:
         mode_llm_choice = self._get_llm_choice_without_context(
             profile, desire, 'Mode', mode_options, city)
         mode_final_choice = self._get_final_choice(mode_llm_choice)
-        self.logs.loc[len(self.logs)] = [person_id, profile, 0, desire, city, '',
-                                         '', amenity_llm_choice, amenity_final_choice,
-                                         '', mode_llm_choice, mode_final_choice]
-        return amenity_final_choice, mode_final_choice
+        if not in_parallel:
+            self.logs.loc[len(self.logs)] = [person_id, profile, 0, desire, city, '',
+                                             '', amenity_llm_choice, amenity_final_choice,
+                                             '', mode_llm_choice, mode_final_choice]
+
+            return amenity_final_choice, mode_final_choice
+        else:
+            return [person_id, profile, 0, desire, city, '',
+                    '', amenity_llm_choice, amenity_final_choice,
+                    '', mode_llm_choice, mode_final_choice]
 
     def save_logs(self, log_data_path=None):
         if log_data_path:
