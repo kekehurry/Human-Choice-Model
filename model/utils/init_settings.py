@@ -8,9 +8,15 @@ from neo4j import GraphDatabase
 
 class Settings:
 
-    url = f"bolt://neo4j:7687"
-    username = "neo4j"
-    password = "neo4jgraph"
+    # ollama settings
+    llm_url= "http://ollama:11434"
+    # llm_url= "http://localhost:11434"
+    
+    # neo4j settings
+    url = "bolt://neo4j:7687"
+    # url = "bolt://localhost:7687"
+    username="neo4j"
+    password="neo4jgraph"
 
     driver = GraphDatabase.driver(url, auth=(username, password))
     graph = Neo4jGraph(
@@ -21,11 +27,11 @@ class Settings:
     )
 
     embedding_model = OllamaEmbeddings(
-        model="nomic-embed-text", base_url=f"http://ollama:11434")
+        model="nomic-embed-text", base_url=llm_url)
     cypher_model = ChatOllama(
-        model='llama3.1', temperature=0, base_url=f"http://ollama:11434")
+        model='llama3.1', temperature=0, base_url=llm_url)
     choice_model = ChatOllama(
-        model='llama3.1', format="json", base_url=f"http://ollama:11434")
+        model='llama3.1', format="json", base_url=llm_url)
 
     duration_step = 5
     distance_step = 0.5
