@@ -22,7 +22,7 @@ def get_similarity_score(profile, query_results):
         ids.append(p['id'])
 
     # Normalize embeddings for cosine similarity
-    embeddings = np.array(embeddings).astype('float32')
+    embeddings = np.array(embeddings).astype(np.float32)
     norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
     normalized_embeddings = embeddings / norms
 
@@ -36,7 +36,7 @@ def get_similarity_score(profile, query_results):
     normalized_profile_embedding = profile_embedding / profile_norm
 
     # Perform similarity search
-    D, I = index.search(np.array([normalized_profile_embedding]), len(people))
+    D, I = index.search(np.array([normalized_profile_embedding],dtype=np.float32), len(people))
 
     # Collect results
     results = [{"id": ids[i], "similarity_score": D[0][j]}
@@ -61,7 +61,7 @@ def get_similar_nodes(profile, query_results, k=None):
         ids.append(p['id'])
 
     # Normalize embeddings for cosine similarity
-    embeddings = np.array(embeddings).astype('float32')
+    embeddings = np.array(embeddings).astype(np.float32)
     norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
     normalized_embeddings = embeddings / norms
 
@@ -75,7 +75,7 @@ def get_similar_nodes(profile, query_results, k=None):
     normalized_profile_embedding = profile_embedding / profile_norm
 
     # Perform similarity search
-    D, I = index.search(np.array([normalized_profile_embedding]), len(people))
+    D, I = index.search(np.array([normalized_profile_embedding],dtype=np.float32), len(people))
 
     # Collect results
     results = [{"id": ids[i], "similarity_score": D[0][j]}
