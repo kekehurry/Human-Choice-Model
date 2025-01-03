@@ -1,8 +1,8 @@
 # Graph RAG as Human Choice Model:Building a Data-Driven Simulation Framework with LLM Agents
 
-The study of human behavior in urban environment is an important field in city sciences. However, it's usually not easy to collect behavior data especially in newly developed area. Recently, generative agents provide a way to simulate human behaviors without data using llms. But these generative methods still face the challenge of reliability, as they may not always produce consistent or realistic behavior simulations.
+Studying human behavior in urban environments is a crucial field within city sciences. However, collecting accurate behavioral data, particularly in newly developed areas, poses significant challenges. Recently, generative agents—powered by large language models (LLMs) have emerged as a promising approach to simulate human behaviors in these environments without requiring extensive real-world data. These models can offer valuable insights into human interactions and responses in urban contexts. Despite their potential, generative methods face challenges related to reliability, as they may not always produce consistent or realistic behavior simulations. 
 
-To address this, a hybrid approach is proposed, combining Graph Retrieval-Augmented Generation (Graph RAG) with LLMs. By integrating graph-based retrieval, the model aims to enhance the contextual understanding and accuracy of the generated behaviors with a small amount of data, making the simulations more reliable and reflective of real-world dynamics.
+To addresses the limitations of existing approaches in capturing realistic, context-sensitive simulations within limited data, this paper proposes a novel approach that enhances the contextual awareness and behavioral alignment of generative agents across diverse population groups. By leveraging the strengths of Graph Retrieval Augmented Generation (Graph RAG) and LLMs, the proposed approach aims to deliver more robust and realistic behavior simulations. The experimental results indicate that the proposed approach outperforms both popular machine learning methods and standalone LLM-based method within limited data. Additionally, it demonstrates the ability to adapt to changing conditions that are not present in the dataset. These improvements enhance the reliability of AI-driven simulations in urban science, making them more reflective of real-world dynamics.
 
 ![demo](assets/human-choice-model.gif)
 
@@ -119,6 +119,8 @@ The construction of behavior graph in this model follows the schema of BDI agent
 - **Desire**: What the agent want to do. ('Eat','Shop' or 'Recreation')
 - **Intension**: The final choice the agent made. (amenity choice, mobility choice)
 
+![](assets/data_schema.png)
+
 # Graph recommondation
 
 ![](assets/graph_recommondation.png)
@@ -126,9 +128,11 @@ The construction of behavior graph in this model follows the schema of BDI agent
 # Validation
 
 **mobility choice**
-![](assets/mobility_choice.png)
-**amenity choice**
-![](assets/amenity_choice.png)
+![](assets/pl_vs_gl.png)
+comparison of MAPE and KLD between pure LLM (PL) and proposed method (GL)
+
+![](assets/num_sample.png)
+Comparison of pure LLM method and the proposed methods based on different number of training samples
 
 # Acknowledgement
 
